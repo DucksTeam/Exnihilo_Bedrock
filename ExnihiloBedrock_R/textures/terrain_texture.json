@@ -1,0 +1,10 @@
+{
+	"resource_pack_name": "exnihilo",
+	"texture_name": "atlas.terrain",
+	"padding": 0,
+	"texture_data": {
+		"dust_block": {
+			"textures": "textures/blocks/dust_block"
+		}
+	}
+}

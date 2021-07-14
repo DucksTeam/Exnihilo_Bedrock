@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:dust_block"
+		},
+		
+		"components": {
+			"minecraft:block_light_absorption": 15,
+			"minecraft:destroy_time": 2.0,
+			"minecraft:unit_cube": {},
+			"minecraft:map_color": "#D3D0B5",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "dust_block"
+				}
+			}
+		}
+	}
+}
