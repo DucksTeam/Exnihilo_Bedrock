@@ -55,7 +55,7 @@
 					"amount": 1
 				},
 				"run_command": {
-					"command": "summon exnihilo:crook",
+					"command": "setblock ~~~ exnihilo:crook",
 					"target": "block"
 				}
 			}
