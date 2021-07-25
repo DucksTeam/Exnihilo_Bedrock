@@ -1,0 +1,26 @@
+{
+	"pools": [{
+		"rolls": 2,
+		"entries": [{
+			"type": "item",
+			"name": "minecraft:sapling",
+			"weight": 15
+		}, {
+			"type": "item",
+			"name": "minecraft:apple",
+			"weight": 2
+		}, {
+			"type": "item",
+			"name": "exnihilo:silkworm",
+			"weight": 8
+		}, {
+			"type": "item",
+			"name": "minecraft:stick",
+			"weight": 15
+		},{
+			"type": "item",
+			"name": "minecraft:air",
+			"weight": 60
+		}]
+	}]
+}

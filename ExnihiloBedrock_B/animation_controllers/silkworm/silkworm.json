@@ -1,0 +1,19 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.silkworm": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/fill ~1~~ ~1~~ exnihilo:infesting_leaves 0 replace leaves",
+						"/fill ~-1~~ ~-1~~ exnihilo:infesting_leaves 0 replace leaves",
+						"/fill ~~~1 ~~~1 exnihilo:infesting_leaves 0 replace leaves",
+						"/fill ~~~-1 ~~~-1 exnihilo:infesting_leaves 0 replace leaves",
+						"/fill ~~1~ ~~1~ exnihilo:infesting_leaves 0 replace leaves",
+						"/fill ~~-1~ ~~-1~ exnihilo:infesting_leaves 0 replace leaves"
+					]
+				}
+			}
+		}
+	}
+}

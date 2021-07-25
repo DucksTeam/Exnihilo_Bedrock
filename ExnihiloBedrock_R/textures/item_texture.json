@@ -1,0 +1,24 @@
+{
+	"resource_pack_name": "exnihilo",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"hammer": {
+			"textures": [
+				"textures/items/wooden_hammer",
+				"textures/items/stone_hammer",
+				"textures/items/iron_hammer",
+				"textures/items/golden_hammer",
+				"textures/items/diamond_hammer"
+			]
+		},
+		"crook": {
+			"textures": [
+				"textures/items/wooden_crook",
+				"textures/items/bone_crook"
+			]
+		},
+		"silkworm": {
+			"textures": "textures/items/silkworm"
+		}
+	}
+}

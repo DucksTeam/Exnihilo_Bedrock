@@ -1,1 +1,10 @@
 tile.exnihilo:dust_block.name=Dust Block
+
+item.exnihilo:wooden_hammer=Wooden Hammer
+item.exnihilo:stone_hammer=Stone Hammer
+item.exnihilo:iron_hammer=Iron Hammer
+item.exnihilo:golden_hammer=Golden Hammer
+item.exnihilo:diamond_hammer=Diamond Hammer
+item.exnihilo:wooden_crook=Wooden Crook
+item.exnihilo:bone_crook=Bone Crook
+item.exnihilo:silkworm=Silkworm

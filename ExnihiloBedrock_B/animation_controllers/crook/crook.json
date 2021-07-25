@@ -1,0 +1,14 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.crook": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/setblock ~~~ exnihilo:crook"
+					]
+				}
+			}
+		}
+	}
+}

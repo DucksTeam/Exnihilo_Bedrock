@@ -5,6 +5,36 @@
 	"texture_data": {
 		"dust_block": {
 			"textures": "textures/blocks/dust_block"
+		},
+		"leaves_infesting0": {
+			"textures": "textures/blocks/leaves_infesting0"
+		},
+		"leaves_infesting1": {
+			"textures": "textures/blocks/leaves_infesting1"
+		},
+		"leaves_infesting2": {
+			"textures": "textures/blocks/leaves_infesting2"
+		},
+		"leaves_infesting3": {
+			"textures": "textures/blocks/leaves_infesting3"
+		},
+		"leaves_infesting4": {
+			"textures": "textures/blocks/leaves_infesting4"
+		},
+		"leaves_infesting5": {
+			"textures": "textures/blocks/leaves_infesting5"
+		},
+		"leaves_infesting6": {
+			"textures": "textures/blocks/leaves_infesting6"
+		},
+		"leaves_infesting7": {
+			"textures": "textures/blocks/leaves_infesting7"
+		},
+		"leaves_infesting8": {
+			"textures": "textures/blocks/leaves_infesting8"
+		},
+		"leaves_infested": {
+			"textures": "textures/blocks/leaves_infested"
 		}
 	}
 }

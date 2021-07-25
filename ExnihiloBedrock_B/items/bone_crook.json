@@ -1,0 +1,64 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:bone_crook",
+			"category": "Equipment"
+		},
+
+		"components": {
+			"minecraft:icon": {
+				"texture": "crook",
+				"frame": 1
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 249
+			},
+			"minecraft:repairable": {
+				"repair_items": [{
+					"items": ["minecraft:bone"],
+					"repair_amount": 59
+				}]
+			},
+			"minecraft:mining_speed": 4,
+			"minecraft:digger": {
+				"on_dig": {
+					"event": "damage"
+				},
+				"destroy_speeds": [{
+					"block": "minecraft:leaves",
+					"speed": 16,
+					"on_dig": {
+						"event": "damage_and_spawn_loot"
+					}
+				}, {
+					"block": "exnihilo:infesting_leaves",
+					"speed": 16,
+					"on_dig": {
+						"event": "damage"
+					}
+				}]
+			}
+		},
+		"events": {
+			"damage": {
+				"damage": {
+					"type": "all",
+					"amount": 1
+				}
+			},
+			"damage_and_spawn_loot": {
+				"damage": {
+					"type": "all",
+					"amount": 1
+				},
+				"run_command": {
+					"command": "summon exnihilo:crook",
+					"target": "block"
+				}
+			}
+		}
+	}
+}

@@ -7,7 +7,7 @@
 		
 		"components": {
 			"minecraft:block_light_absorption": 15,
-			"minecraft:destroy_time": 2.0,
+			"minecraft:destroy_time": 1.0,
 			"minecraft:unit_cube": {},
 			"minecraft:map_color": "#D3D0B5",
 			"minecraft:material_instances": {
