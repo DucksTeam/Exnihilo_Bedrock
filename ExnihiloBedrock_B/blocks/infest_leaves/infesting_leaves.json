@@ -14,7 +14,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting0",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -24,7 +24,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting1",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -34,7 +34,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting2",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -44,7 +44,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting3",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -54,7 +54,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting4",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -64,7 +64,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting5",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -74,7 +74,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting6",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -84,7 +84,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting7",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -94,7 +94,7 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infesting8",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				}
 			}
@@ -104,11 +104,11 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "leaves_infested",
-						"render_method": "blend"
+						"render_method": "alpha_test"
 					}
 				},
 				"minecraft:on_placed": {
-					"event": "summon_entity"
+					"event": "spread_leaves"
 				}
 			}
 		}],
@@ -136,13 +136,23 @@
 				}
 			},
 			"string_loot": {
-				"spawn_loot": {
-					"table": "loot_tables/gameplay/infested_leaves.json"
-				}
+				"sequence": [{
+					"condition": "q.block_property('exnihilo:tick_to_infested') == 9",
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/infested_leaves.json"
+					}
+				}]
 			},
-			"summon_entity": {
+			"spread_leaves": {
 				"run_command": {
-					"command": "summon exnihilo:silkworm"
+					"command": [
+						"fill ~1~~ ~1~~ exnihilo:infesting_leaves 0 replace leaves",
+						"fill ~-1~~ ~-1~~ exnihilo:infesting_leaves 0 replace leaves",
+						"fill ~~~1 ~~~1 exnihilo:infesting_leaves 0 replace leaves",
+						"fill ~~~-1 ~~~-1 exnihilo:infesting_leaves 0 replace leaves",
+						"fill ~~1~ ~~1~ exnihilo:infesting_leaves 0 replace leaves",
+						"fill ~~-1~ ~~-1~ exnihilo:infesting_leaves 0 replace leaves"
+					]
 				}
 			}
 		}
