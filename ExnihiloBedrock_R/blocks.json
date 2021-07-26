@@ -3,5 +3,8 @@
 	
 	"dust_block": {
 		"sound": "sand"
+	},
+	"infesting_leaves": {
+		"sound": "grass"
 	}
 }

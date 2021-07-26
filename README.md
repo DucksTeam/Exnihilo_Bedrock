@@ -6,8 +6,7 @@ Inspired from Exnihilo Adsensio
 - [x] Hammer
 - [x] Crook
 - [x] Silkworm
-- [ ] Infesting Leaves ( Oak Leaves from tree only )
-	- [ ] Block Sounds
+- [x] Infesting Leaves ( Oak Leaves from tree only )
 - [ ] Wooden Barrel
 	- [ ] Can store water when raining
 	- [ ] Can scoop water with empty bucket

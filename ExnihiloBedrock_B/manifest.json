@@ -15,7 +15,7 @@
 	}],
 	"dependencies": [{
 		"uuid": "f3788ad0-3b6e-4273-aecc-660edc548641",
-		"version": [0, 1, 0]
+		"version": [0, 1, 1]
 	}],
 	"metadata": {
 		"authors": ["NguyenDuck"],
