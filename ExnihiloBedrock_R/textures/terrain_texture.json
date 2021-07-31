@@ -7,34 +7,67 @@
 			"textures": "textures/blocks/dust_block"
 		},
 		"leaves_infesting0": {
-			"textures": "textures/blocks/leaves_infesting0"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting0"
 		},
 		"leaves_infesting1": {
-			"textures": "textures/blocks/leaves_infesting1"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting1"
 		},
 		"leaves_infesting2": {
-			"textures": "textures/blocks/leaves_infesting2"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting2"
 		},
 		"leaves_infesting3": {
-			"textures": "textures/blocks/leaves_infesting3"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting3"
 		},
 		"leaves_infesting4": {
-			"textures": "textures/blocks/leaves_infesting4"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting4"
 		},
 		"leaves_infesting5": {
-			"textures": "textures/blocks/leaves_infesting5"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting5"
 		},
 		"leaves_infesting6": {
-			"textures": "textures/blocks/leaves_infesting6"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting6"
 		},
 		"leaves_infesting7": {
-			"textures": "textures/blocks/leaves_infesting7"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting7"
 		},
 		"leaves_infesting8": {
-			"textures": "textures/blocks/leaves_infesting8"
+			"textures": "textures/blocks/infest_leaves/leaves_infesting8"
 		},
 		"leaves_infested": {
-			"textures": "textures/blocks/leaves_infested"
+			"textures": "textures/blocks/infest_leaves/leaves_infested"
+		},
+		"water": {
+			"textures": "textures/blocks/water"
+		},
+		"composting_1": {
+			"textures": "textures/blocks/wooden_barrel/composting_1"
+		},
+		"composting_2": {
+			"textures": "textures/blocks/wooden_barrel/composting_2"
+		},
+		"composting_3": {
+			"textures": "textures/blocks/wooden_barrel/composting_3"
+		},
+		"composting_4": {
+			"textures": "textures/blocks/wooden_barrel/composting_4"
+		},
+		"composting_5": {
+			"textures": "textures/blocks/wooden_barrel/composting_5"
+		},
+		"composting_6": {
+			"textures": "textures/blocks/wooden_barrel/composting_6"
+		},
+		"composting_7": {
+			"textures": "textures/blocks/wooden_barrel/composting_7"
+		},
+		"composting_8": {
+			"textures": "textures/blocks/wooden_barrel/composting_8"
+		},
+		"composting_9": {
+			"textures": "textures/blocks/wooden_barrel/composting_9"
+		},
+		"composting_10": {
+			"textures": "textures/blocks/wooden_barrel/composting_10"
 		}
 	}
 }

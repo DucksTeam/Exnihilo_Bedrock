@@ -21,7 +21,7 @@
 			"setblock": {
 				"decrement_stack": {},
 				"run_command": {
-					"command": "fill ~~~ ~~~ exnihilo:infesting_leaves 0 replace leaves",
+					"command": "fill ~~~ ~~~ exnihilo:infested_leaves 0 replace leaves",
 					"target": "block"
 				}
 			}

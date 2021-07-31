@@ -4,7 +4,10 @@
 	"dust_block": {
 		"sound": "sand"
 	},
-	"infesting_leaves": {
+	"infested_leaves": {
 		"sound": "grass"
+	},
+	"wooden_barrel": {
+		"sound": "wood"
 	}
 }

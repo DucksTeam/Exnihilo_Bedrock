@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "exnihilo:stone_hammer"
+		},
+
+		"tags": ["crafting_table"],
+		"pattern": [
+			"*C*",
+			"*SC",
+			"S**"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:cobblestone"
+			},
+			"S": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "exnihilo:stone_hammer"
+		}
+	}
+
+}
