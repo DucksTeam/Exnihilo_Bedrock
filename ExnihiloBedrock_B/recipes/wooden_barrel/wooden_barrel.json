@@ -13,8 +13,7 @@
 		],
 		"key": {
 			"P": {
-				"item": "minecraft:planks",
-				"data": 0
+				"item": "minecraft:planks"
 			},
 			"S": {
 				"item": "minecraft:wooden_slab"

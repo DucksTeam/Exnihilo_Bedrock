@@ -11,6 +11,9 @@
 				"texture": "crook",
 				"frame": 1
 			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.pickaxe"
+			},
 			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {
