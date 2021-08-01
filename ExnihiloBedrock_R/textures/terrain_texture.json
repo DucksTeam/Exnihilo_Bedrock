@@ -7,34 +7,70 @@
 			"textures": "textures/blocks/dust_block"
 		},
 		"leaves_infesting0": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting0"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#70a931"
+			}
 		},
 		"leaves_infesting1": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting1"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#72aa37"
+			}
 		},
 		"leaves_infesting2": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting2"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#7bb046"
+			}
 		},
 		"leaves_infesting3": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting3"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#87b95a"
+			}
 		},
 		"leaves_infesting4": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting4"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#97c571"
+			}
 		},
 		"leaves_infesting5": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting5"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#a9d388"
+			}
 		},
 		"leaves_infesting6": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting6"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#bde3a0"
+			}
 		},
 		"leaves_infesting7": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting7"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#bde3a0"
+			}
 		},
 		"leaves_infesting8": {
-			"textures": "textures/blocks/infest_leaves/leaves_infesting8"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#d2f5b9"
+			}
+		},
+		"leaves_infesting9": {
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#e8ffd1"
+			}
 		},
 		"leaves_infested": {
-			"textures": "textures/blocks/infest_leaves/leaves_infested"
+			"textures": {
+				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#ffffff"
+			}
 		},
 		"water": {
 			"textures": "textures/blocks/water"
