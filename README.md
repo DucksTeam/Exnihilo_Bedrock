@@ -23,7 +23,6 @@
 		7. [x] Infested Leaves
 4. [x] Silkworm 
 	1. [x] Silkworm
-		1. [ ] 
 	2. [ ] Cooked Silkworm
 5. [x] Infested Leaves ( Leaves from tree only )
 	1. [ ] Can Spreadout to other leaves
