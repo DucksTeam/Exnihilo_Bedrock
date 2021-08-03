@@ -2,9 +2,9 @@
 	"format_version": "1.16.221",
 	"minecraft:block": {
 		"description": {
-			"identifier": "exnihilo:crook"
+			"identifier": "exnihilo:crook_leaves_drop"
 		},
-		
+
 		"components": {
 			"minecraft:block_light_absorption": 0,
 			"minecraft:on_placed": {
@@ -14,12 +14,12 @@
 		"events": {
 			"spawn_loot_and_destroy": {
 				"spawn_loot": {
-					"table": "loot_tables/gameplay/crook/crook.json"
+					"table": "loot_tables/gameplay/crook/leaves_drop.json"
 				},
 				"set_block": {
 					"block_type": "minecraft:air"
 				}
 			}
 		}
-	}
+    }
 }

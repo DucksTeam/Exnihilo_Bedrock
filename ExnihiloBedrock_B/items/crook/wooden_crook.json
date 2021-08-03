@@ -31,14 +31,22 @@
 					"event": "damage"
 				},
 				"destroy_speeds": [{
-					"block": "minecraft:leaves",
+					"block": "leaves",
 					"speed": 4,
 					"on_dig": {
-						"event": "damage_and_spawn_loot"
+						"event": "damage_and_leaves"
 					}
 				}, {
-					"block": "exnihilo:infesting_leaves",
-					"speed": 5,
+					"block": "leaves2",
+					"speed": 4,
+					"on_dig": {
+						"event": "damage_and_leaves2"
+					}
+				}, {
+					"block": {
+						"tags": "q.any_tag('exnihilo:infested_leaves')"
+					},
+					"speed": 4,
 					"on_dig": {
 						"event": "damage"
 					}
@@ -52,13 +60,23 @@
 					"amount": 1
 				}
 			},
-			"damage_and_spawn_loot": {
+			"damage_and_leaves": {
 				"damage": {
 					"type": "all",
 					"amount": 1
 				},
 				"run_command": {
-					"command": "setblock ~~~ exnihilo:crook",
+					"command": "setblock ~~~ exnihilo:crook_leaves_drop",
+					"target": "block"
+				}
+			},
+			"damage_and_leaves2": {
+				"damage": {
+					"type": "all",
+					"amount": 1
+				},
+				"run_command": {
+					"command": "setblock ~~~ exnihilo:crook_leaves2_drop",
 					"target": "block"
 				}
 			}

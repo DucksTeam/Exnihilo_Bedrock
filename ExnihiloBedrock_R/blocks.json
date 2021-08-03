@@ -4,7 +4,22 @@
 	"dust_block": {
 		"sound": "sand"
 	},
-	"infested_leaves": {
+	"infested_oak_leaves": {
+		"sound": "grass"
+	},
+	"infested_spruce_leaves": {
+		"sound": "grass"
+	},
+	"infested_birch_leaves": {
+		"sound": "grass"
+	},
+	"infested_jungle_leaves": {
+		"sound": "grass"
+	},
+	"infested_acacia_leaves": {
+		"sound": "grass"
+	},
+	"infested_dark_oak_leaves": {
 		"sound": "grass"
 	},
 	"wooden_barrel": {

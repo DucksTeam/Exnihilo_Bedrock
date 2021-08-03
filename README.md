@@ -13,26 +13,26 @@
 3. [x] Crook
 	1. [x] Wooden Crook 
 	2. [x] Bone Crook
-	3. [ ] Crook can break the block list below to drop items
-		1. [x] Oak Leaves
-		2. [x] Birch Leaves <em>( Issue drop oak_sapling )</em>
-		3. [x] Jungle Leaves <em>( Issue drop oak_sapling )</em>
-		4. [x] Spruce Leaves <em>( Issue drop oak_sapling )</em>
-		5. [ ] Acacia Leaves 
-		6. [ ] Dark Oak Leaves 
+	3. [x] Crook can break the block list below to drop items
+		1. [x] Oak Leaves ( random sapling leaves type )
+		2. [x] Birch Leaves ( random sapling leaves type )
+		3. [x] Jungle Leaves ( random sapling leaves type )
+		4. [x] Spruce Leaves ( random sapling leaves type )
+		5. [x] Acacia Leaves ( random sapling leaves2 type )
+		6. [x] Dark Oak Leaves ( random sapling leaves2 type )
 		7. [x] Infested Leaves
 4. [x] Silkworm 
 	1. [x] Silkworm
 	2. [ ] Cooked Silkworm
 5. [x] Infested Leaves ( Leaves from tree only )
 	1. [ ] Can Spreadout to other leaves
-		1. [ ] Supported leaves type
+		1. [x] Supported leaves type
 			1. [x] Oak Leaves 
-			2. [ ] Birch Leaves
-			3. [ ] Jungle Leaves
-			4. [ ] Spruce Leaves
-			5. [ ] Acacia Leaves
-			6. [ ] Dark Oak Leaves
+			2. [x] Birch Leaves
+			3. [x] Jungle Leaves
+			4. [x] Spruce Leaves
+			5. [x] Acacia Leaves
+			6. [x] Dark Oak Leaves
 	2. [ ] Support biome color 
 		1. [x] Plains
 6. [x] Wooden Barrel

@@ -6,69 +6,399 @@
 		"dust_block": {
 			"textures": "textures/blocks/dust_block"
 		},
-		"leaves_infesting0": {
+		"oak_infesting0": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#70a931"
 			}
 		},
-		"leaves_infesting1": {
+		"oak_infesting1": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#72aa37"
 			}
 		},
-		"leaves_infesting2": {
+		"oak_infesting2": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#7bb046"
 			}
 		},
-		"leaves_infesting3": {
+		"oak_infesting3": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#87b95a"
 			}
 		},
-		"leaves_infesting4": {
+		"oak_infesting4": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#97c571"
 			}
 		},
-		"leaves_infesting5": {
+		"oak_infesting5": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#a9d388"
 			}
 		},
-		"leaves_infesting6": {
+		"oak_infesting6": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#bde3a0"
 			}
 		},
-		"leaves_infesting7": {
+		"oak_infesting7": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#bde3a0"
 			}
 		},
-		"leaves_infesting8": {
+		"oak_infesting8": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#d2f5b9"
 			}
 		},
-		"leaves_infesting9": {
+		"oak_infesting9": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
 				"tint_color": "#e8ffd1"
 			}
 		},
-		"leaves_infested": {
+		"oak_infested": {
 			"textures": {
 				"path": "textures/blocks/leaves_oak",
+				"tint_color": "#ffffff"
+			}
+		},
+		"spruce_infesting0": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#70a931"
+			}
+		},
+		"spruce_infesting1": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#72aa37"
+			}
+		},
+		"spruce_infesting2": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#7bb046"
+			}
+		},
+		"spruce_infesting3": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#87b95a"
+			}
+		},
+		"spruce_infesting4": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#97c571"
+			}
+		},
+		"spruce_infesting5": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#a9d388"
+			}
+		},
+		"spruce_infesting6": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"spruce_infesting7": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"spruce_infesting8": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#d2f5b9"
+			}
+		},
+		"spruce_infesting9": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#e8ffd1"
+			}
+		},
+		"spruce_infested": {
+			"textures": {
+				"path": "textures/blocks/leaves_spruce",
+				"tint_color": "#ffffff"
+			}
+		},
+		"birch_infesting0": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#70a931"
+			}
+		},
+		"birch_infesting1": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#72aa37"
+			}
+		},
+		"birch_infesting2": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#7bb046"
+			}
+		},
+		"birch_infesting3": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#87b95a"
+			}
+		},
+		"birch_infesting4": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#97c571"
+			}
+		},
+		"birch_infesting5": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#a9d388"
+			}
+		},
+		"birch_infesting6": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"birch_infesting7": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"birch_infesting8": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#d2f5b9"
+			}
+		},
+		"birch_infesting9": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#e8ffd1"
+			}
+		},
+		"birch_infested": {
+			"textures": {
+				"path": "textures/blocks/leaves_birch",
+				"tint_color": "#ffffff"
+			}
+		},
+		"jungle_infesting0": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#70a931"
+			}
+		},
+		"jungle_infesting1": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#72aa37"
+			}
+		},
+		"jungle_infesting2": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#7bb046"
+			}
+		},
+		"jungle_infesting3": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#87b95a"
+			}
+		},
+		"jungle_infesting4": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#97c571"
+			}
+		},
+		"jungle_infesting5": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#a9d388"
+			}
+		},
+		"jungle_infesting6": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"jungle_infesting7": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"jungle_infesting8": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#d2f5b9"
+			}
+		},
+		"jungle_infesting9": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#e8ffd1"
+			}
+		},
+		"jungle_infested": {
+			"textures": {
+				"path": "textures/blocks/leaves_jungle",
+				"tint_color": "#ffffff"
+			}
+		},
+		"acacia_infesting0": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#70a931"
+			}
+		},
+		"acacia_infesting1": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#72aa37"
+			}
+		},
+		"acacia_infesting2": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#7bb046"
+			}
+		},
+		"acacia_infesting3": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#87b95a"
+			}
+		},
+		"acacia_infesting4": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#97c571"
+			}
+		},
+		"acacia_infesting5": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#a9d388"
+			}
+		},
+		"acacia_infesting6": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"acacia_infesting7": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"acacia_infesting8": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#d2f5b9"
+			}
+		},
+		"acacia_infesting9": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#e8ffd1"
+			}
+		},
+		"acacia_infested": {
+			"textures": {
+				"path": "textures/blocks/leaves_acacia",
+				"tint_color": "#ffffff"
+			}
+		},
+		"dark_oak_infesting0": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#70a931"
+			}
+		},
+		"dark_oak_infesting1": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#72aa37"
+			}
+		},
+		"dark_oak_infesting2": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#7bb046"
+			}
+		},
+		"dark_oak_infesting3": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#87b95a"
+			}
+		},
+		"dark_oak_infesting4": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#97c571"
+			}
+		},
+		"dark_oak_infesting5": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#a9d388"
+			}
+		},
+		"dark_oak_infesting6": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"dark_oak_infesting7": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#bde3a0"
+			}
+		},
+		"dark_oak_infesting8": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#d2f5b9"
+			}
+		},
+		"dark_oak_infesting9": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
+				"tint_color": "#e8ffd1"
+			}
+		},
+		"dark_oak_infested": {
+			"textures": {
+				"path": "textures/blocks/leaves_big_oak",
 				"tint_color": "#ffffff"
 			}
 		},

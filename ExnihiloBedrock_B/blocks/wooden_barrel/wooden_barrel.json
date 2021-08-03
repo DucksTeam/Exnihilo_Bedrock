@@ -54,7 +54,7 @@
 						"exnihilo:filled_part": 10
 					}
 				}, {
-					"condition": "q.get_equipped_item_name(0) == 'sapling' || q.get_equipped_item_name(0) == 'leaves'",
+					"condition": "q.get_equipped_item_name(0) == 'sapling' || q.get_equipped_item_name(0) == 'leaves' || q.get_equipped_item_name(0) == 'leaves2'",
 					"decrement_stack": {},
 					"run_command": {
 						"command": "playsound block.composter.fill @a ~~~ 1.0"
