@@ -19,7 +19,6 @@
 		},
 		"events": {
 			"setblock": {
-				"decrement_stack": {},
 				"run_command": {
 					"command": [
 						"fill ~~~ ~~~ exnihilo:infested_oak_leaves 0 replace leaves 0",
@@ -36,7 +35,8 @@
 						"fill ~~~ ~~~ exnihilo:infested_dark_oak_leaves 0 replace leaves2 5"
 					],
 					"target": "block"
-				}
+				},
+				"decrement_stack": {}
 			}
 		}
 	}

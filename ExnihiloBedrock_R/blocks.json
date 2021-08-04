@@ -24,5 +24,8 @@
 	},
 	"wooden_barrel": {
 		"sound": "wood"
+	},
+	"oak_crucible": {
+		"sound": "wood"
 	}
 }

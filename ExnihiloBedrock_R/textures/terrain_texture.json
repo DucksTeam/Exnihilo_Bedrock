@@ -434,6 +434,9 @@
 		},
 		"composting_10": {
 			"textures": "textures/blocks/wooden_barrel/composting_10"
+		},
+		"oak_crucible": {
+			"textures": "textures/blocks/log_oak"
 		}
 	}
 }
