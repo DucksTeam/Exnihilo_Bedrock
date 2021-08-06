@@ -42,12 +42,7 @@
 	( can't using event trigger "transform_item") <b>[MCPE-102422 Issue](https://bugs.mojang.com/browse/MCPE-102422)</b>
 	- [x] Can put organic matter in the block to convert to dirt<br>
 	( sapling, leaves )
-7. [ ] Oak Crucible
-	- [ ] Can put leaves to it and convert to water
-	- [ ] Interact with empty iron bucket when it converted to water, it will transform to water iron bucket<br>
-	( can't using event trigger "transform_item") <b>[MCPE-102422 Issue](https://bugs.mojang.com/browse/MCPE-102422)</b>
-	- [ ] It can test the heats for increase and decrease convert speed
-8. [ ] Sieve
+7. [ ] Sieve
 	- [ ] Pebble
 		- [ ] Stone Pebble 
 		- [ ] Granite Pebble 
@@ -66,11 +61,11 @@
 			- [ ] Iron
 			- [ ] Gold
 		- [ ] Ore Dust ( Maybe )
-9. [ ] Crucible
+8. [ ] Crucible
 	- [ ] Porcelain Clay
 	- [ ] Unfired Crucible
-10. [ ] Stone Barrel
-11. [ ] Other Utilities
+9. [ ] Stone Barrel
+10. [ ] Other Utilities
 	- [ ] Ancient Spores
 	- [ ] Acacia Seed
 	- [ ] Birch Seed
