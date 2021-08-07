@@ -1,0 +1,50 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "loot_table",
+			"name": "loot_tables/gameplay/sieve/list/custom_ore.json",
+			"quality": 2
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "minecraft:redstone",
+			"weight": 5
+		}, {
+			"type": "empty",
+			"weight": 95
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "minecraft:glowstone_dust",
+			"weight": 6
+		}, {
+			"type": "empty",
+			"weight": 94
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "minecraft:gunpowder",
+			"weight": 16
+		}, {
+			"type": "empty",
+			"weight": 84
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "minecraft:blaze_powder",
+			"weight": 5
+		}, {
+			"type": "empty",
+			"weight": 95
+		}]
+	}]
+}

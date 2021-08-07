@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:seed_spruce"
+		},
+		
+		"components": {
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "air"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [{
+					"allowed_faces": ["up"],
+					"block_filter": ["grass", "dirt"]
+				}]
+			},
+			"minecraft:on_placed": {
+				"event": "destroy"
+			}
+		},
+		"events": {
+			"destroy": {
+				"run_command": {
+					"command": [
+						"setblock ~~~ sapling 1",
+						"playsound dig.grass @a ~~~ 0.7"
+					]
+				}
+			}
+		}
+	}
+}

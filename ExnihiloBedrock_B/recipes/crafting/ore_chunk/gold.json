@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "exnihilo:ore_chunk_gold"
+		},
+
+		"tags": ["crafting_table"],
+		"pattern": [
+			"PP",
+			"PP"
+		],
+		"key": {
+			"P": {
+				"item": "exnihilo:ore_piece_gold"
+			}
+		},
+		"result": {
+			"item": "exnihilo:ore_chunk_gold"
+		}
+	}
+
+}

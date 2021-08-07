@@ -1,11 +1,41 @@
+
 tile.exnihilo:dust_block.name=Dust Block
+
 tile.exnihilo:wooden_barrel.name=Wooden Barrel
+
+tile.exnihilo:sieve_block.name=Sieve
+
+tile.exnihilo:mesh_string.name=String Mesh
+tile.exnihilo:mesh_flint.name=Flint Stiffened Mesh
+tile.exnihilo:mesh_iron.name=Iron Stiffened Mesh
+tile.exnihilo:mesh_diamond.name=Diamond Stiffened Mesh
 
 item.exnihilo:wooden_hammer=Wooden Hammer
 item.exnihilo:stone_hammer=Stone Hammer
 item.exnihilo:iron_hammer=Iron Hammer
 item.exnihilo:golden_hammer=Golden Hammer
 item.exnihilo:diamond_hammer=Diamond Hammer
+
 item.exnihilo:wooden_crook=Wooden Crook
 item.exnihilo:bone_crook=Bone Crook
+
 item.exnihilo:silkworm=Silkworm
+
+item.exnihilo:stone_pebble=Stone Pebble
+
+item.exnihilo:seed_oak=Oak Seed
+item.exnihilo:seed_spruce=Spruce Seed
+item.exnihilo:seed_birch=Birch Seed
+item.exnihilo:seed_jungle=Jungle Seed
+item.exnihilo:seed_acacia=Acacia Seed
+item.exnihilo:seed_dark_oak=Dark Oak Seed
+item.exnihilo:grass_seeds=Grass Seeds
+item.exnihilo:seed_cactus=Cactus Seeds
+item.exnihilo:seed_carrots=Carrot Seeds
+item.exnihilo:seed_potatoes=Potato Seeds
+item.exnihilo:seed_sugarcane=Sugarcane Seeds
+
+item.exnihilo:ore_piece_iron=Iron Ore Pieces
+item.exnihilo:ore_piece_gold=Gold Ore Pieces
+item.exnihilo:ore_chunk_iron=Iron Ore Chunk
+item.exnihilo:ore_chunk_gold=Gold Ore Chunk

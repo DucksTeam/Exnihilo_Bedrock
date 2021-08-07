@@ -1,0 +1,544 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:sieve_block",
+			"register_to_creative_menu": true,
+			"properties": {
+				"exnihilo:mesh": [0,1,2,3,4],
+				"exnihilo:block": [0,1,2,3,4],
+				"exnihilo:progress": [0,1,2,3,4,5,6,7,8,9]
+			}
+		},
+
+		"components": {
+			"minecraft:block_light_absorption": 5,
+			"minecraft:destroy_time": 2.0,
+			"minecraft:explosion_resistance": 3.0,
+			"minecraft:immovable": true,
+			"minecraft:unwalkable": true,
+			"minecraft:geometry": "geometry.sieve",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "planks"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "empty_interact"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "destroyed_event"
+			}
+		},
+		"events": {
+			"empty_interact": {
+				"sequence": [{
+					"condition": "q.get_equipped_item_name(0) == 'mesh_string'",
+					"decrement_stack": {
+						"ignore_game_mode": true
+					},
+					"set_block_property": {
+						"exnihilo:mesh": 1
+					}
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'mesh_flint'",
+					"decrement_stack": {
+						"ignore_game_mode": true
+					},
+					"set_block_property": {
+						"exnihilo:mesh": 2
+					}
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'mesh_iron'",
+					"decrement_stack": {
+						"ignore_game_mode": true
+					},
+					"set_block_property": {
+						"exnihilo:mesh": 3
+					}
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'mesh_diamond'",
+					"decrement_stack": {
+						"ignore_game_mode": true
+					},
+					"set_block_property": {
+						"exnihilo:mesh": 4
+					}
+				}]
+			},
+			"mesh_interact": {
+				"sequence": [{
+					"condition": "q.is_sneaking",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 1",
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/sieve/mesh/string.json"
+						},
+						"set_block_property": {
+							"exnihilo:mesh": 0
+						}
+					}, {
+						"condition": "q.block_property('exnihilo:mesh') == 2",
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/sieve/mesh/flint.json"
+						},
+						"set_block_property": {
+							"exnihilo:mesh": 0
+						}
+					}, {
+						"condition": "q.block_property('exnihilo:mesh') == 3",
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/sieve/mesh/iron.json"
+						},
+						"set_block_property": {
+							"exnihilo:mesh": 0
+						}
+					}, {
+						"condition": "q.block_property('exnihilo:mesh') == 4",
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/sieve/mesh/diamond.json"
+						},
+						"set_block_property": {
+							"exnihilo:mesh": 0
+						}
+					}]
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'gravel'",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 1 || q.block_property('exnihilo:mesh') == 2 || q.block_property('exnihilo:mesh') == 3 || q.block_property('exnihilo:mesh') == 4",
+						"decrement_stack": {},
+						"set_block_property": {
+							"exnihilo:block": 1,
+							"exnihilo:progress": 1
+						}
+					}]
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'dirt'",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 1 || q.block_property('exnihilo:mesh') == 2",
+						"decrement_stack": {},
+						"set_block_property": {
+							"exnihilo:block": 2,
+							"exnihilo:progress": 1
+						}
+					}]
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'sand'",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 1 || q.block_property('exnihilo:mesh') == 2 || q.block_property('exnihilo:mesh') == 3 || q.block_property('exnihilo:mesh') == 4",
+						"decrement_stack": {},
+						"set_block_property": {
+							"exnihilo:block": 3,
+							"exnihilo:progress": 1
+						}
+					}]
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'dust_block'",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 1 || q.block_property('exnihilo:mesh') == 2 || q.block_property('exnihilo:mesh') == 3 || q.block_property('exnihilo:mesh') == 4",
+						"decrement_stack": {},
+						"set_block_property": {
+							"exnihilo:block": 4,
+							"exnihilo:progress": 1
+						}
+					}]
+				}]
+			},
+			"progress_interact": {
+				"sequence": [{
+					"condition": "q.block_property('exnihilo:progress') < 9",
+					"set_block_property": {
+						"exnihilo:progress": "q.block_property('exnihilo:progress') + 1"
+					}
+				}, {
+					"condition": "q.block_property('exnihilo:progress') == 9",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 1",
+						"sequence": [{
+							"condition": "q.block_property('exnihilo:block') == 1",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/string/gravel.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 2",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/string/dirt.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 3",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/string/sand.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 4",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/string/dust.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}]
+					}, {
+						"condition": "q.block_property('exnihilo:mesh') == 2",
+						"sequence": [{
+							"condition": "q.block_property('exnihilo:block') == 1",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/flint/gravel.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 2",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/flint/dirt.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 3",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/flint/sand.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 4",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/flint/dust.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}]
+					}, {
+						"condition": "q.block_property('exnihilo:mesh') == 3",
+						"sequence": [{
+							"condition": "q.block_property('exnihilo:block') == 1",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/iron/gravel.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 3",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/iron/sand.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 4",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/iron/dust.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}]
+					}, {
+						"condition": "q.block_property('exnihilo:mesh') == 4",
+						"sequence": [{
+							"condition": "q.block_property('exnihilo:block') == 1",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/diamond/gravel.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 3",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/diamond/sand.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 4",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/diamond/dust.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}]
+					}]
+				}]
+			},
+			"destroyed_event": {
+				"sequence": [{
+					"condition": "q.block_property('exnihilo:mesh') == 1",
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/sieve/mesh/string.json"
+					}
+				}, {
+					"condition": "q.block_property('exnihilo:mesh') == 2",
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/sieve/mesh/flint.json"
+					}
+				}, {
+					"condition": "q.block_property('exnihilo:mesh') == 3",
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/sieve/mesh/iron.json"
+					}
+				}, {
+					"condition": "q.block_property('exnihilo:mesh') == 4",
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/sieve/mesh/diamond.json"
+					}
+				}]
+			}
+		},
+		"permutations": [{
+			"condition": "q.block_property('exnihilo:mesh') > 0 && q.block_property('exnihilo:block') == 0",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_empty",
+				"minecraft:on_interact": {
+					"event": "mesh_interact"
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') > 0 && q.block_property('exnihilo:block') > 0",
+			"components": {
+				"minecraft:on_interact": {
+					"event": "progress_interact"
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 1 && q.block_property('exnihilo:block') == 0",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_string_empty"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 2 && q.block_property('exnihilo:block') == 0",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_flint_empty"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 3 && q.block_property('exnihilo:block') == 0",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_iron_empty"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 4 && q.block_property('exnihilo:block') == 0",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_diamond_empty"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 1 && q.block_property('exnihilo:block') == 1",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_string_gravel"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 2 && q.block_property('exnihilo:block') == 1",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_flint_gravel"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 3 && q.block_property('exnihilo:block') == 1",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_iron_gravel"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 4 && q.block_property('exnihilo:block') == 1",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_diamond_gravel"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 1 && q.block_property('exnihilo:block') == 2",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_string_dirt"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 2 && q.block_property('exnihilo:block') == 2",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_flint_dirt"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 1 && q.block_property('exnihilo:block') == 3",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_string_sand"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 2 && q.block_property('exnihilo:block') == 3",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_flint_sand"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 3 && q.block_property('exnihilo:block') == 3",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_iron_sand"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 4 && q.block_property('exnihilo:block') == 3",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_diamond_sand"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 1 && q.block_property('exnihilo:block') == 4",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_string_dust"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 2 && q.block_property('exnihilo:block') == 4",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_flint_dust"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 3 && q.block_property('exnihilo:block') == 4",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_iron_dust"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 4 && q.block_property('exnihilo:block') == 4",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_diamond_dust"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 1",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_1"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 2",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_2"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 3",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_3"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 4",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_4"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 5",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_5"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 6",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_6"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 7",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_7"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 8",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_8"
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:progress') == 9",
+			"components": {
+				"minecraft:geometry": "geometry.sieve_mesh_9"
+			}
+		}]
+	}
+}

@@ -1,0 +1,113 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_potatoes",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_carrots",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_sugarcane",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_oak",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_spruce",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_birch",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_jungle",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_carrots",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_sugarcane",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_acacia",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "exnihilo:seed_dark_oak",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}]
+}

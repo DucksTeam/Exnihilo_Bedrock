@@ -25,7 +25,8 @@
 	"wooden_barrel": {
 		"sound": "wood"
 	},
-	"oak_crucible": {
-		"sound": "wood"
+	"sieve": {
+		"sound": "wood",
+		"block_shape": "cauldron"
 	}
 }

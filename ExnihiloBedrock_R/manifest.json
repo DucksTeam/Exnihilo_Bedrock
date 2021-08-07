@@ -5,7 +5,7 @@
 		"description": "Resources Pack by NguyenDuck\nBase Textures By MikeLydeamore\nEdited Textures By NguyenDuck\nAll right reserved",
 		"uuid": "f3788ad0-3b6e-4273-aecc-660edc548641",
 		"min_engine_version": [1, 16, 221],
-		"version": [1, 0, 2]
+		"version": [1, 0, 3]
 	},
 	"modules": [{
 		"type": "resources",

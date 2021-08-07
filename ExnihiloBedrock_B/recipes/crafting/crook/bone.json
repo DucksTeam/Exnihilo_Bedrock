@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "exnihilo:bone_crook"
+		},
+
+		"tags": ["crafting_table"],
+		"pattern": [
+			"BB",
+			"*B*",
+			"*B*"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:bone"
+			}
+		},
+		"result": {
+			"item": "exnihilo:bone_crook"
+		}
+	}
+}

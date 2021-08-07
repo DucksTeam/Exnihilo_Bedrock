@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "exnihilo:mesh_diamond"
+		},
+
+		"tags": ["crafting_table"],
+		"pattern": [
+			"D D",
+			"DID",
+			"D D"
+		],
+		"key": {
+			"I": {
+				"item": "exnihilo:mesh_iron"
+			},
+			"D": {
+				"item": "minecraft:diamond"
+			}
+		},
+		"result": {
+			"item": "exnihilo:mesh_diamond"
+		}
+	}
+}

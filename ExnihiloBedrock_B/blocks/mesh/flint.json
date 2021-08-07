@@ -1,0 +1,34 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:mesh_flint",
+			"register_to_creative_menu": true
+		},
+		
+		"components": {
+			"minecraft:geometry": "geometry.mesh",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mesh_flint"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [{
+					"allowed_faces": ["down"],
+					"block_filter": ["dragon_egg"]
+				}]
+			},
+			"minecraft:on_placed": {
+				"event": "destroy"
+			}
+		},
+		"events": {
+			"destroy": {
+				"set_block": {
+					"block_type": "air"
+				}
+			}
+		}
+	}
+}

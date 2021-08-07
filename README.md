@@ -42,24 +42,21 @@
 	( can't using event trigger "transform_item") <b>[MCPE-102422 Issue](https://bugs.mojang.com/browse/MCPE-102422)</b>
 	- [x] Can put organic matter in the block to convert to dirt<br>
 	( sapling, leaves )
-7. [ ] Sieve
-	- [ ] Pebble
-		- [ ] Stone Pebble 
-		- [ ] Granite Pebble 
-		- [ ] Diorite Pebble 
-		- [ ] Andersite Pebble
-	- [ ] Mesh 
-		- [ ] String Mesh 
-		- [ ] Flint Stiffened Mesh 
-		- [ ] Iron Stiffened Mesh
-		- [ ] Diamond Stiffened Mesh
-	- [ ] Ore 
-		- [ ] Ore Piece
-			- [ ] Iron
-			- [ ] Gold
-		- [ ] Ore Chunk
-			- [ ] Iron
-			- [ ] Gold
+7. [x] Sieve
+	- [x] Pebble
+		- [x] Stone Pebble 
+	- [x] Mesh 
+		- [x] String Mesh 
+		- [x] Flint Stiffened Mesh 
+		- [x] Iron Stiffened Mesh
+		- [x] Diamond Stiffened Mesh
+	- [x] Ore 
+		- [x] Ore Piece
+			- [x] Iron
+			- [x] Gold
+		- [x] Ore Chunk
+			- [x] Iron
+			- [x] Gold
 		- [ ] Ore Dust ( Maybe )
 8. [ ] Crucible
 	- [ ] Porcelain Clay
@@ -67,17 +64,17 @@
 9. [ ] Stone Barrel
 10. [ ] Other Utilities
 	- [ ] Ancient Spores
-	- [ ] Acacia Seed
-	- [ ] Birch Seed
-	- [ ] Carrot Seeds
-	- [ ] Cactus Seed
-	- [ ] Dark Oak Seed
-	- [ ] Grass Seeds
-	- [ ] Jungle Seed
-	- [ ] Oak Seed
-	- [ ] Spruce Seed
-	- [ ] Sugarcane Seed
-	- [ ] Potato Seeds
+	- [x] Acacia Seed
+	- [x] Birch Seed
+	- [x] Carrot Seeds
+	- [x] Cactus Seeds
+	- [x] Dark Oak Seed
+	- [x] Grass Seeds
+	- [x] Jungle Seed
+	- [x] Oak Seed
+	- [x] Spruce Seed
+	- [x] Sugarcane Seeds
+	- [x] Potato Seeds
 	- [ ] Crushed Netherrack
 	- [ ] Crushed Endstone
 	- [ ] Blazing Doll

@@ -435,8 +435,77 @@
 		"composting_10": {
 			"textures": "textures/blocks/wooden_barrel/composting_10"
 		},
-		"oak_crucible": {
-			"textures": "textures/blocks/log_oak"
+		"mesh_string": {
+			"textures": "textures/blocks/wool_colored_white"
+		},
+		"mesh_flint": {
+			"textures": "textures/blocks/wool_colored_silver"
+		},
+		"mesh_iron": {
+			"textures": "textures/blocks/wool_colored_gray"
+		},
+		"mesh_diamond": {
+			"textures": "textures/blocks/wool_colored_light_blue"
+		},
+		"sieve_string_empty": {
+			"textures": "textures/blocks/sieve/string/empty"
+		},
+		"sieve_flint_empty": {
+			"textures": "textures/blocks/sieve/flint/empty"
+		},
+		"sieve_iron_empty": {
+			"textures": "textures/blocks/sieve/iron/empty"
+		},
+		"sieve_diamond_empty": {
+			"textures": "textures/blocks/sieve/diamond/empty"
+		},
+		"sieve_string_gravel": {
+			"textures": "textures/blocks/sieve/string/gravel"
+		},
+		"sieve_flint_gravel": {
+			"textures": "textures/blocks/sieve/flint/gravel"
+		},
+		"sieve_iron_gravel": {
+			"textures": "textures/blocks/sieve/iron/gravel"
+		},
+		"sieve_diamond_gravel": {
+			"textures": "textures/blocks/sieve/diamond/gravel"
+		},
+		"sieve_string_dirt": {
+			"textures": "textures/blocks/sieve/string/dirt"
+		},
+		"sieve_flint_dirt": {
+			"textures": "textures/blocks/sieve/flint/dirt"
+		}/*,
+		"sieve_iron_dirt": {
+			"textures": "textures/blocks/sieve/iron/dirt"
+		},
+		"sieve_diamond_dirt": {
+			"textures": "textures/blocks/sieve/diamond/dirt"
+		}*/,
+		"sieve_string_sand": {
+			"textures": "textures/blocks/sieve/string/sand"
+		},
+		"sieve_flint_sand": {
+			"textures": "textures/blocks/sieve/flint/sand"
+		},
+		"sieve_iron_sand": {
+			"textures": "textures/blocks/sieve/iron/sand"
+		},
+		"sieve_diamond_sand": {
+			"textures": "textures/blocks/sieve/diamond/sand"
+		},
+		"sieve_string_dust": {
+			"textures": "textures/blocks/sieve/string/dust"
+		},
+		"sieve_flint_dust": {
+			"textures": "textures/blocks/sieve/flint/dust"
+		},
+		"sieve_iron_dust": {
+			"textures": "textures/blocks/sieve/iron/dust"
+		},
+		"sieve_diamond_dust": {
+			"textures": "textures/blocks/sieve/diamond/dust"
 		}
 	}
 }
