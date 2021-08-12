@@ -1,0 +1,15 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.crucible_heat_test": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/execute @e[type=exnihilo:crucible_material_binding_texture,c=1,r=1] ~~-1.3125~ detect ~~~ torch 5 event entity @s torch",
+						"/execute @e[type=exnihilo:crucible_material_binding_texture,c=1,r=1] ~~-1.3125~ detect ~~~ lava 0 event entity @s lava"
+					]
+				}
+			}
+		}
+	}
+}

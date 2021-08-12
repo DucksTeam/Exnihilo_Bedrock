@@ -1,0 +1,10 @@
+{
+	"format_version": "1.10",
+	"render_controllers": {
+		"controller.render.crucible_material_binding_texture": {
+			"geometry": "geometry.default",
+			"materials": [{"*": "material.default"}],
+			"textures": ["texture.default"]
+		}
+	}
+}

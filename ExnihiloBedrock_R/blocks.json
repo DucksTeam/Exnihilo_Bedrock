@@ -28,5 +28,12 @@
 	"sieve": {
 		"sound": "wood",
 		"block_shape": "cauldron"
+	},
+	"crucible_unfired": {
+		"sound": "sand",
+		"block_shape": "cauldron"
+	},
+	"crucible": {
+		"block_shape": "cauldron"
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.16.221",
 	"minecraft:block": {
 		"description": {
-			"identifier": "exnihilo:crook_leaves2_drop"
+			"identifier": "exnihilo:crucible_lava_drop"
 		},
 
 		"components": {
@@ -14,12 +14,7 @@
 		"events": {
 			"spawn_loot_and_destroy": {
 				"spawn_loot": {
-					"table": "loot_tables/gameplay/crook/leaves2_drop.json"
-				},
-				"run_command": {
-					"command": [
-						"playsound dig.grass @a ~~~ 0.7"
-					]
+					"table": "loot_tables/gameplay/crucible/lava_drop.json"
 				},
 				"set_block": {
 					"block_type": "air"

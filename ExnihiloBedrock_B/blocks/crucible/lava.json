@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:crucible_lava"
+		},
+
+		"components": {
+			"minecraft:block_light_absorption": 10,
+			"minecraft:destroy_time": 2.0,
+			"minecraft:loot": "loot_tables/gameplay/crucible/default.json",
+			"minecraft:geometry": "geometry.crucible_empty",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "crucible_fired"
+				}
+			},
+			"minecraft:on_interact": {
+				"condition": "q.get_equipped_item_name(0) == 'bucket'",
+				"event": "lava_ínteract"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "clear_texture"
+			}
+		},
+		"events": {
+			"lava_ínteract": {
+				"set_block_at_pos": {
+					"block_offset": [0, 1, 0],
+					"block_type": "exnihilo:crucible_lava_drop"
+				},
+				"run_command": {
+					"command": "event entity @e[type=exnihilo:crucible_lava_binding_texture,c=1,r=1] despawn"
+				},
+				"set_block": {
+					"block_type": "exnihilo:crucible"
+				}
+			},
+			"clear_texture": {
+				"run_command": {
+					"command": "event entity @e[type=exnihilo:crucible_lava_binding_texture,c=1,r=1] despawn"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "exnihilo:crucible_lava_binding_texture",
+			"enable_attachables": true,
+			"materials": { "default": "experience_orb" },
+			"textures": {
+				"default": "textures/blocks/lava_placeholder"
+			},
+			"geometry": {
+				"default": "geometry.crucible_texture_binding"
+			},
+			"render_controllers": ["controller.render.crucible_material_binding_texture"]
+		}
+	}
+}

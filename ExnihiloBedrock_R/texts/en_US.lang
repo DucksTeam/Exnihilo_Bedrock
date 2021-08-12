@@ -5,6 +5,9 @@ tile.exnihilo:wooden_barrel.name=Wooden Barrel
 
 tile.exnihilo:sieve_block.name=Sieve
 
+tile.exnihilo:crucible.name=Crucible
+tile.exnihilo:crucible_unfired.name=Unfired Crucible
+
 tile.exnihilo:mesh_string.name=String Mesh
 tile.exnihilo:mesh_flint.name=Flint Stiffened Mesh
 tile.exnihilo:mesh_iron.name=Iron Stiffened Mesh
@@ -39,3 +42,5 @@ item.exnihilo:ore_piece_iron=Iron Ore Pieces
 item.exnihilo:ore_piece_gold=Gold Ore Pieces
 item.exnihilo:ore_chunk_iron=Iron Ore Chunk
 item.exnihilo:ore_chunk_gold=Gold Ore Chunk
+
+item.exnihilo:porcelain_clay=Porcelain Clay

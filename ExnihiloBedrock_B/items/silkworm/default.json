@@ -7,6 +7,9 @@
 		},
 
 		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.items"
+			},
 			"minecraft:icon": {
 				"texture": "silkworm"
 			},

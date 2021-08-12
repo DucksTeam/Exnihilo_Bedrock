@@ -1,0 +1,12 @@
+{
+	"format_version": "1.16",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "exnihilo:crucible"
+		},
+
+		"tags": ["furnace"],
+		"input": "exnihilo:crucible_unfired",
+		"output": "exnihilo:crucible"
+	}
+}

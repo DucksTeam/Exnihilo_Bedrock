@@ -49,6 +49,9 @@
 				"textures/items/ore/chunk/iron",
 				"textures/items/ore/chunk/gold"
 			]
+		},
+		"porcelain_clay": {
+			"textures": "textures/items/porcelain_clay/default"
 		}
 	}
 }

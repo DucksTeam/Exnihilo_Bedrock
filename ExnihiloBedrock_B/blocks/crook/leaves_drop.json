@@ -16,8 +16,13 @@
 				"spawn_loot": {
 					"table": "loot_tables/gameplay/crook/leaves_drop.json"
 				},
+				"run_command": {
+					"command": [
+						"playsound dig.grass @a ~~~ 0.7"
+					]
+				},
 				"set_block": {
-					"block_type": "minecraft:air"
+					"block_type": "air"
 				}
 			}
 		}

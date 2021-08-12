@@ -476,13 +476,7 @@
 		},
 		"sieve_flint_dirt": {
 			"textures": "textures/blocks/sieve/flint/dirt"
-		}/*,
-		"sieve_iron_dirt": {
-			"textures": "textures/blocks/sieve/iron/dirt"
 		},
-		"sieve_diamond_dirt": {
-			"textures": "textures/blocks/sieve/diamond/dirt"
-		}*/,
 		"sieve_string_sand": {
 			"textures": "textures/blocks/sieve/string/sand"
 		},
@@ -506,6 +500,12 @@
 		},
 		"sieve_diamond_dust": {
 			"textures": "textures/blocks/sieve/diamond/dust"
+		},
+		"crucible_fired": {
+			"textures": "textures/blocks/crucible/default"
+		},
+		"crucible_unfired": {
+			"textures": "textures/blocks/crucible/unfired"
 		}
 	}
 }

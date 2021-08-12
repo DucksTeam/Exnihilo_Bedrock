@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "exnihilo:crook_default_entity",
+			"is_summonable": true
+		},
+
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [{
+					"cause": "fatal",
+					"deals_damage": false
+				}]
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:timer": {
+				"time": 0.1,
+				"looping": false,
+				"time_down_event": {
+					"event": "despawn"
+				}
+			}
+		},
+		"events": {
+			"despawn": {
+				"run_command": {
+					"command": [
+						"fill ~~1~ ~~-1~ exnihilo:crook_leaves_drop 0 replace leaves",
+						"fill ~~1~ ~~-1~ exnihilo:crook_leaves2_drop 0 replace leaves2",
+						"fill ~1~~ ~-1~~ exnihilo:crook_leaves_drop 0 replace leaves",
+						"fill ~1~~ ~-1~~ exnihilo:crook_leaves2_drop 0 replace leaves2",
+						"fill ~~~1 ~~~-1 exnihilo:crook_leaves_drop 0 replace leaves",
+						"fill ~~~1 ~~~-1 exnihilo:crook_leaves2_drop 0 replace leaves2"
+					]
+				},
+				"add": {
+					"component_groups": ["despawn"]
+				}
+			}
+		}
+	}
+}

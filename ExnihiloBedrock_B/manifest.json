@@ -5,7 +5,7 @@
 		"description": "Behavior Pack by NguyenDuck\n Inspired from MikeLydeamore\nAll right reserved",
 		"uuid": "51e7681b-23e0-4a5b-bccc-858ca45ae1a5",
 		"min_engine_version": [1, 16, 221],
-		"version": [1, 0, 4]
+		"version": [1, 0, 5]
 	},
 	"modules": [{
 		"type": "data",
@@ -15,7 +15,7 @@
 	}],
 	"dependencies": [{
 		"uuid": "f3788ad0-3b6e-4273-aecc-660edc548641",
-		"version": [1, 0, 3]
+		"version": [1, 0, 4]
 	}],
 	"metadata": {
 		"authors": ["NguyenDuck"],
