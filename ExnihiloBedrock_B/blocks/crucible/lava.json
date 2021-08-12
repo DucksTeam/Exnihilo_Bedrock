@@ -25,6 +25,9 @@
 		},
 		"events": {
 			"lava_ínteract": {
+				"decrement_stack": {
+					"ignore_game_mode": true
+				},
 				"set_block_at_pos": {
 					"block_offset": [0, 1, 0],
 					"block_type": "exnihilo:crucible_lava_drop"
