@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:crushed_netherrack",
+			"register_to_creative_menu": true
+		},
+		
+		"components": {
+			"minecraft:block_light_absorption": 15,
+			"minecraft:destroy_time": 0.7,
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "crushed_netherrack"
+				}
+			}
+		}
+	}
+}

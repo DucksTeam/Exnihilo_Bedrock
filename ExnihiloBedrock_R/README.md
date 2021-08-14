@@ -25,7 +25,7 @@
 	1. [x] Silkworm
 	2. [ ] Cooked Silkworm
 5. [x] Infested Leaves ( Leaves from tree only )
-	1. [ ] Can Spreadout to other leaves
+	1. [x] Can Spreadout to other leaves
 		1. [x] Supported leaves type
 			1. [x] Oak Leaves 
 			2. [x] Birch Leaves
@@ -33,7 +33,7 @@
 			4. [x] Spruce Leaves
 			5. [x] Acacia Leaves
 			6. [x] Dark Oak Leaves
-	2. [ ] Support biome color 
+	2. [x] Support biome color 
 		1. [x] Plains
 6. [x] Wooden Barrel
 	- <s>Can store water when raining</s><em>(Temporarily Removed)</em>
@@ -61,7 +61,7 @@
 8. [x] Crucible
 	- [x] Porcelain Clay
 	- [x] Unfired Crucible
-9. [ ] Stone Barrel
+9. [x] Stone Barrel
 10. [ ] Other Utilities
 	- [ ] Ancient Spores
 	- [x] Acacia Seed
@@ -75,8 +75,8 @@
 	- [x] Spruce Seed
 	- [x] Sugarcane Seeds
 	- [x] Potato Seeds
-	- [ ] Crushed Netherrack
-	- [ ] Crushed Endstone
+	- [x] Crushed Netherrack
+	- [x] Crushed Endstone
 	- [ ] Blazing Doll
 	- [ ] Creeping Doll
 	- [ ] Witchwater ( Hardest )

@@ -54,6 +54,18 @@
 					"on_dig": {
 						"event": "damage_and_transform_to_dust"
 					}
+				}, {
+					"block": "minecraft:netherrack",
+					"speed": 4,
+					"on_dig": {
+						"event": "damage_and_transform_to_crushed_netherrack"
+					}
+				}, {
+					"block": "minecraft:end_stone",
+					"speed": 4,
+					"on_dig": {
+						"event": "damage_and_transform_to_crushed_end_stone"
+					}
 				}]
 			}
 		},
@@ -91,6 +103,26 @@
 				},
 				"run_command": {
 					"command": "summon exnihilo:transform_to_dust",
+					"target": "block"
+				}
+			},
+			"damage_and_transform_to_crushed_netherrack": {
+				"damage": {
+					"type": "all",
+					"amount": 1
+				},
+				"run_command": {
+					"command": "summon exnihilo:transform_to_crushed_netherrack",
+					"target": "block"
+				}
+			},
+			"damage_and_transform_to_crushed_end_stone": {
+				"damage": {
+					"type": "all",
+					"amount": 1
+				},
+				"run_command": {
+					"command": "summon exnihilo:transform_to_crushed_end_stone",
 					"target": "block"
 				}
 			}

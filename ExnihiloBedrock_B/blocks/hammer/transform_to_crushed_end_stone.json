@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:transform_to_crushed_end_stone"
+		},
+		
+		"components": {
+			"minecraft:block_light_absorption": 0,
+			"minecraft:on_placed": {
+				"event": "spawn_loot_and_destroy"
+			}
+		},
+		"events": {
+			"spawn_loot_and_destroy": {
+				"spawn_loot": {
+					"table": "loot_tables/gameplay/hammer/transform_to_crushed_end_stone.json"
+				},
+				"set_block": {
+					"block_type": "minecraft:air"
+				}
+			}
+		}
+	}
+}

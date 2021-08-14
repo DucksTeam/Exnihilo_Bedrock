@@ -1,7 +1,10 @@
 
 tile.exnihilo:dust_block.name=Dust Block
+tile.exnihilo:crushed_netherrack.name=Crushed Netherrack
+tile.exnihilo:crushed_end_stone.name=Crushed End Stone
 
 tile.exnihilo:wooden_barrel.name=Wooden Barrel
+tile.exnihilo:stone_barrel.name=Stone Barrel
 
 tile.exnihilo:sieve_block.name=Sieve
 

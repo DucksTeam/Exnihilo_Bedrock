@@ -506,6 +506,12 @@
 		},
 		"crucible_unfired": {
 			"textures": "textures/blocks/crucible/unfired"
+		},
+		"crushed_netherrack": {
+			"textures": "textures/blocks/crushed/netherrack"
+		},
+		"crushed_end_stone": {
+			"textures": "textures/blocks/crushed/end_stone"
 		}
 	}
 }

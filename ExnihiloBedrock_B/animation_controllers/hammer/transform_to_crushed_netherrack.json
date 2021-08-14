@@ -1,0 +1,16 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.transform_to_crushed_netherrack": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/replaceitem entity @s slot.inventory 0 netherrack 63",
+						"/tp @s @e[r=2,name=nettherack,type=item]",
+						"/setblock ~~~ exnihilo:transform_to_crushed_netherrack"
+					]
+				}
+			}
+		}
+	}
+}

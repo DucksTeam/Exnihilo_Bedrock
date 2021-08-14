@@ -1,0 +1,16 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.transform_to_crushed_end_stone": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/replaceitem entity @s slot.inventory 0 end_stone 63",
+						"/tp @s @e[r=2,name=end_stne,type=item]",
+						"/setblock ~~~ exnihilo:transform_to_crushed_end_stone"
+					]
+				}
+			}
+		}
+	}
+}
