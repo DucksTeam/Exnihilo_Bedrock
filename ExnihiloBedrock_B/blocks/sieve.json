@@ -6,7 +6,7 @@
 			"register_to_creative_menu": true,
 			"properties": {
 				"exnihilo:mesh": [0,1,2,3,4],
-				"exnihilo:block": [0,1,2,3,4],
+				"exnihilo:block": [0,1,2,3,4,5,6],
 				"exnihilo:progress": [0,1,2,3,4,5,6,7,8,9]
 			}
 		},
@@ -142,6 +142,26 @@
 							"exnihilo:progress": 1
 						}
 					}]
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'crushed_netherrack'",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 3 || q.block_property('exnihilo:mesh') == 4",
+						"decrement_stack": {},
+						"set_block_property": {
+							"exnihilo:block": 5,
+							"exnihilo:progress": 1
+						}
+					}]
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'crushed_end_stone'",
+					"sequence": [{
+						"condition": "q.block_property('exnihilo:mesh') == 3 || q.block_property('exnihilo:mesh') == 4",
+						"decrement_stack": {},
+						"set_block_property": {
+							"exnihilo:block": 6,
+							"exnihilo:progress": 1
+						}
+					}]
 				}]
 			},
 			"progress_interact": {
@@ -259,6 +279,24 @@
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
 							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 5",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/iron/crushed_netherrack.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 6",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/iron/crushed_end_stone.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
 						}]
 					}, {
 						"condition": "q.block_property('exnihilo:mesh') == 4",
@@ -284,6 +322,24 @@
 							"condition": "q.block_property('exnihilo:block') == 4",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/diamond/dust.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 5",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/diamond/crushed_netherrack.json"
+							},
+							"set_block_property": {
+								"exnihilo:block": 0,
+								"exnihilo:progress": 0
+							}
+						}, {
+							"condition": "q.block_property('exnihilo:block') == 6",
+							"spawn_loot": {
+								"table": "loot_tables/gameplay/sieve/diamond/crushed_end_stone.json"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -491,6 +547,42 @@
 				"minecraft:material_instances": {
 					"*": {
 						"texture": "sieve_diamond_dust"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 3 && q.block_property('exnihilo:block') == 5",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_iron_crushed_netherrack"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 4 && q.block_property('exnihilo:block') == 5",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_diamond_crushed_netherrack"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 3 && q.block_property('exnihilo:block') == 6",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_iron_crushed_end_stone"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:mesh') == 4 && q.block_property('exnihilo:block') == 6",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "sieve_diamond_crushed_end_stone"
 					}
 				}
 			}

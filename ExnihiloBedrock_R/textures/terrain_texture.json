@@ -501,6 +501,18 @@
 		"sieve_diamond_dust": {
 			"textures": "textures/blocks/sieve/diamond/dust"
 		},
+		"sieve_iron_crushed_netherrack": {
+			"textures": "textures/blocks/sieve/iron/crushed_netherrack"
+		},
+		"sieve_diamond_crushed_netherrack": {
+			"textures": "textures/blocks/sieve/diamond/crushed_netherrack"
+		},
+		"sieve_iron_crushed_end_stone": {
+			"textures": "textures/blocks/sieve/iron/crushed_end_stone"
+		},
+		"sieve_diamond_crushed_end_stone": {
+			"textures": "textures/blocks/sieve/diamond/crushed_end_stone"
+		},
 		"crucible_fired": {
 			"textures": "textures/blocks/crucible/default"
 		},
