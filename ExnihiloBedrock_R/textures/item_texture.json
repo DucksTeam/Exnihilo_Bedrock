@@ -35,7 +35,8 @@
 				"textures/items/seeds/cactus",
 				"textures/items/seeds/carrot",
 				"textures/items/seeds/potato",
-				"textures/items/seeds/sugarcane"
+				"textures/items/seeds/sugarcane",
+				"textures/items/seeds/ancient_spores"
 			]
 		},
 		"ore_pieces": {

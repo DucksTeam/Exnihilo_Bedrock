@@ -63,7 +63,7 @@
 	- [x] Unfired Crucible
 9. [x] Stone Barrel
 10. [ ] Other Utilities
-	- [ ] Ancient Spores
+	- [x] Ancient Spores
 	- [x] Acacia Seed
 	- [x] Birch Seed
 	- [x] Carrot Seeds
@@ -82,4 +82,4 @@
 	- [ ] Witchwater ( Hardest )
 
 ## Lisence
-### <u>MikeLydeamore/ExnihiloAdscencio</u> <b>[MIT Lisence](https://github.com/MikeLydeamore/ExnihiloAdscencio/LISENCE)</b>
+### <u>MikeLydeamore/ExnihiloAdscencio</u> <b>[MIT Lisence](https://github.com/MikeLydeamore/ExNihiloAdscensio/blob/master/LICENSE)</b>
