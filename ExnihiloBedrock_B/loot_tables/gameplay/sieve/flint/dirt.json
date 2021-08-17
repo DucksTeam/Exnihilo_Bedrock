@@ -1,21 +1,19 @@
 {
 	"pools": [{
-		"rolls": 1,
+		"rolls": 2,
 		"entries": [{
 			"type": "loot_table",
 			"name": "loot_tables/gameplay/sieve/list/vanilla_seeds.json",
-			"quality": 1,
 			"weight": 10
 		}, {
 			"type": "empty",
 			"weight": 90
 		}]
 	}, {
-		"rolls": 1,
+		"rolls": 2,
 		"entries": [{
 			"type": "loot_table",
-			"name": "loot_tables/gameplay/sieve/list/custom_seeds.json",
-			"quality": 1
+			"name": "loot_tables/gameplay/sieve/list/custom_seeds.json"
 		}]
 	}, {
 		"rolls": 1,

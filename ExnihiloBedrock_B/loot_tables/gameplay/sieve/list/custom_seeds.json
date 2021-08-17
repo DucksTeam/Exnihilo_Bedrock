@@ -3,6 +3,16 @@
 		"rolls": 1,
 		"entries": [{
 			"type": "item",
+			"name": "exnihilo:anciant_spores",
+			"weight": 4
+		}, {
+			"type": "empty",
+			"weight": 96
+		}]
+	}, {
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
 			"name": "exnihilo:seed_potatoes",
 			"weight": 4
 		}, {

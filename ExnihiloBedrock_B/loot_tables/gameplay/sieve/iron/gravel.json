@@ -1,10 +1,13 @@
 {
 	"pools": [{
-		"rolls": 1,
+		"rolls": 2,
 		"entries": [{
 			"type": "loot_table",
 			"name": "loot_tables/gameplay/sieve/list/custom_ore.json",
-			"quality": 0.2
+			"weight": 50
+		}, {
+			"type": "empty",
+			"weight": 50
 		}]
 	}, {
 		"rolls": 1,
