@@ -403,7 +403,10 @@
 			}
 		},
 		"water": {
-			"textures": "textures/blocks/water"
+			"textures": {
+				"path": "textures/blocks/water",
+				"transparency": 0.65
+			}
 		},
 		"composting_1": {
 			"textures": "textures/blocks/wooden_barrel/composting_1"
@@ -524,6 +527,12 @@
 		},
 		"crushed_end_stone": {
 			"textures": "textures/blocks/crushed/end_stone"
+		},
+		"witch_water_flow": {
+			"textures": "textures/blocks/witch_water/flow"
+		},
+		"witch_water_still": {
+			"textures": "textures/blocks/witch_water/still"
 		}
 	}
 }

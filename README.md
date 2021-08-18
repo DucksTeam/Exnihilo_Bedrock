@@ -79,7 +79,7 @@
 	- [x] Crushed Endstone
 	- [ ] Blazing Doll
 	- [ ] Creeping Doll
-	- [ ] Witchwater ( Hardest )
+	- [x] Witchwater ( Hardest )
 
 ## Lisence
 ### <u>MikeLydeamore/ExnihiloAdscencio</u> <b>[MIT Lisence](https://github.com/MikeLydeamore/ExNihiloAdscensio/blob/master/LICENSE)</b>

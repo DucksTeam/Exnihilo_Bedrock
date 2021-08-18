@@ -2,4 +2,12 @@
 	"flipbook_texture": "textures/blocks/water",
 	"atlas_tile": "water",
 	"ticks_per_frame": 2
+}, {
+	"flipbook_texture": "textures/blocks/witch_water/flow",
+	"atlas_tile": "witch_water_flow",
+	"ticks_per_frame": 2
+}, {
+	"flipbook_texture": "textures/blocks/witch_water/still",
+	"atlas_tile": "witch_water_still",
+	"ticks_per_frame": 1
 }]

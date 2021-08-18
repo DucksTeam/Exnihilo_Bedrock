@@ -53,6 +53,9 @@
 		},
 		"porcelain_clay": {
 			"textures": "textures/items/porcelain_clay/default"
+		},
+		"exnihilo_bucket": {
+			"textures": "textures/items/bucket/witch_water"
 		}
 	}
 }

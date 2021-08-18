@@ -1,0 +1,52 @@
+{
+	"format_version": "1.16.221",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:witch_water"
+		},
+
+		"components": {
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:immovable": true,
+			"minecraft:pick_collision": {
+				"origin": [-8, 0, -8],
+				"size": [16, 14, 16]
+			},
+			"minecraft:destroy_time": 340282346638528859811704183484516925440,
+			"minecraft:entity_collision": false,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:geometry": "geometry.witch_water",
+			"minecraft:map_color": "#200052",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "witch_water_flow",
+					"render_method": "alpha_test"
+				},
+				"up": {
+					"texture": "witch_water_still",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "witch_water_still",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "interact"
+			}
+		},
+		"events": {
+			"interact": {
+				"sequence": [{
+					"condition": "q.is_sneaking",
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/witch_water/bucket.json"
+					},
+					"set_block": {
+						"block_type": "air"
+					}
+				}]
+			}
+		}
+	}
+}
