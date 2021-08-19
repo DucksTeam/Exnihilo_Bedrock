@@ -7,6 +7,7 @@
 		},
 
 		"components": {
+			"tag:witch_water": {},
 			"minecraft:icon": {
 				"texture": "exnihilo_bucket",
 				"frame": 0

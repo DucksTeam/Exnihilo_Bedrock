@@ -6,7 +6,7 @@
 			"register_to_creative_menu": true,
 			"properties": {
 				"exnihilo:mode": [0,1,2],
-				"exnihilo:liquid_type": [0,1],
+				"exnihilo:liquid_type": [0,1,2],
 				"exnihilo:compost_type": [0,1,2,3],
 				"exnihilo:filled_part": [0,1,2,3,4,5,6,7,8,9,10],
 				"exnihilo:transform": [0,1,2,3,4,5,6,7,8,9,10]
@@ -56,6 +56,22 @@
 						"exnihilo:filled_part": 10
 					}
 				}, {
+					"condition": "q.get_equipped_item_name(0) == 'witch_water_bucket'",
+					"decrement_stack": {
+						"ignore_game_mode": true
+					},
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/wooden_barrel/bucket.json"
+					},
+					"run_command": {
+						"command": "playsound bucket.empty_water @a ~~~ 1.0"
+					},
+					"set_block_property": {
+						"exnihilo:mode": 1,
+						"exnihilo:liquid_type": 2,
+						"exnihilo:filled_part": 10
+					}
+				}, {
 					"condition": "q.get_equipped_item_name(0) == 'sapling' || q.get_equipped_item_name(0) == 'leaves' || q.get_equipped_item_name(0) == 'leaves2'",
 					"decrement_stack": {},
 					"run_command": {
@@ -70,12 +86,28 @@
 			},
 			"liquid_interact": {
 				"sequence": [{
-					"condition": "q.get_equipped_item_name(0) == 'bucket'",
+					"condition": "q.get_equipped_item_name(0) == 'bucket' && q.block_property('exnihilo:liquid_type') == 1",
 					"decrement_stack": {
 						"ignore_game_mode": true
 					},
 					"spawn_loot": {
 						"table": "loot_tables/gameplay/wooden_barrel/water_bucket.json"
+					},
+					"run_command": {
+						"command": "playsound bucket.fill_water @a ~~~ 1.0"
+					},
+					"set_block_property": {
+						"exnihilo:mode": 0,
+						"exnihilo:liquid_type": 0,
+						"exnihilo:filled_part": 0
+					}
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'bucket' && q.block_property('exnihilo:liquid_type') == 2",
+					"decrement_stack": {
+						"ignore_game_mode": true
+					},
+					"spawn_loot": {
+						"table": "loot_tables/gameplay/witch_water/bucket.json"
 					},
 					"run_command": {
 						"command": "playsound bucket.fill_water @a ~~~ 1.0"
@@ -95,6 +127,14 @@
 						"exnihilo:mode": 2,
 						"exnihilo:liquid_type": 0,
 						"exnihilo:compost_type": 3,
+						"exnihilo:filled_part": 10
+					}
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'ancient_spores'",
+					"decrement_stack": {},
+					"set_block_property": {
+						"exnihilo:mode": 1,
+						"exnihilo:liquid_type": 2,
 						"exnihilo:filled_part": 10
 					}
 				}]
@@ -242,6 +282,18 @@
 					},
 					"up": {
 						"texture": "water"
+					}
+				}
+			}
+		}, {
+			"condition": "q.block_property('exnihilo:liquid_type') == 2",
+			"components": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "planks"
+					},
+					"up": {
+						"texture": "witch_water_still"
 					}
 				}
 			}
