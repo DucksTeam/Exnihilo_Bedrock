@@ -171,6 +171,28 @@
 						"exnihilo:liquid_type": 3,
 						"exnihilo:filled_part": 10
 					}
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'doll_blaze' && q.block_property('exnihilo:liquid_type') == 1",
+					"decrement_stack": {},
+					"set_block_property": {
+						"exnihilo:mode": 0,
+						"exnihilo:liquid_type": 0,
+						"exnihilo:filled_part": 0
+					},
+					"run_command": {
+						"command": "summon blaze ~~1~"
+					}
+				}, {
+					"condition": "q.get_equipped_item_name(0) == 'doll_ender' && q.block_property('exnihilo:liquid_type') == 3",
+					"decrement_stack": {},
+					"set_block_property": {
+						"exnihilo:mode": 0,
+						"exnihilo:liquid_type": 0,
+						"exnihilo:filled_part": 0
+					},
+					"run_command": {
+						"command": "summon enderman ~~1~"
+					}
 				}]
 			},
 			"compost_interact": {

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "exnihilo:doll_ender"
+		},
+
+		"tags": ["crafting_table"],
+		"pattern": [
+			"INI",
+			"LPL",
+			"IRI"
+		],
+		"key": {
+			"P": {
+				"item": "exnihilo:doll_porcelain"
+			},
+			"I": {
+				"item": "minecraft:ink_sac"
+			},
+			"N": {
+				"item": "minecraft:nether_wart"
+			},
+			"L": {
+				"item": "minecraft:lapis_lazuli"
+			},
+			"R": {
+				"item": "minecraft:redstone"
+			}
+		},
+		"result": {
+			"item": "exnihilo:doll_ender"
+		}
+	}
+
+}

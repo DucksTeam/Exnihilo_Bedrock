@@ -23,7 +23,7 @@
 		7. [x] Infested Leaves
 4. [x] Silkworm 
 	1. [x] Silkworm
-	2. [ ] Cooked Silkworm
+	2. [x] Cooked Silkworm
 5. [x] Infested Leaves ( Leaves from tree only )
 	1. [x] Can Spreadout to other leaves
 		1. [x] Supported leaves type
@@ -77,8 +77,8 @@
 	- [x] Potato Seeds
 	- [x] Crushed Netherrack
 	- [x] Crushed Endstone
-	- [ ] Blazing Doll
-	- [ ] Creeping Doll
+	- [x] Blazing Doll
+	- [x] Creeping Doll
 	- [x] Witchwater ( Hardest )
 
 ## Lisence

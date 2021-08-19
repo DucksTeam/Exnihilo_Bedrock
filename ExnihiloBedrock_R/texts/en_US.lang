@@ -26,6 +26,7 @@ item.exnihilo:wooden_crook=Wooden Crook
 item.exnihilo:bone_crook=Bone Crook
 
 item.exnihilo:silkworm=Silkworm
+item.exnihilo:silkworm_cooked=Cooked Silkworm
 
 item.exnihilo:stone_pebble=Stone Pebble
 
@@ -50,3 +51,7 @@ item.exnihilo:ore_chunk_gold=Gold Ore Chunk
 item.exnihilo:porcelain_clay=Porcelain Clay
 
 item.exnihilo:witch_water_bucket=Witch Water Bucket
+
+item.exnihilo:doll_porcelain=Porcelain Doll
+item.exnihilo:doll_blaze=Blazing Doll
+item.exnihilo:doll_ender=Creeping Doll

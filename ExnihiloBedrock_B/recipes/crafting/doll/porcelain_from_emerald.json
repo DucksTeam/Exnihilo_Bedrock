@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "exnihilo:doll_porcelain_emerald"
+		},
+
+		"tags": ["crafting_table"],
+		"pattern": [
+			"PEP",
+			" P ",
+			"P P"
+		],
+		"key": {
+			"P": {
+				"item": "exnihilo:porcelain_clay"
+			},
+			"E": {
+				"item": "minecraft:emerald"
+			}
+		},
+		"result": {
+			"item": "exnihilo:doll_porcelain",
+			"count": 6
+		}
+	}
+
+}

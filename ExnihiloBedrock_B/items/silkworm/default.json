@@ -11,7 +11,8 @@
 				"parent": "itemGroup.name.items"
 			},
 			"minecraft:icon": {
-				"texture": "silkworm"
+				"texture": "silkworm",
+				"frame": 0
 			},
 			"minecraft:max_stack_size": 16,
 			"minecraft:on_use_on": {

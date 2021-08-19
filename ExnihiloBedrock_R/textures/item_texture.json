@@ -18,7 +18,10 @@
 			]
 		},
 		"silkworm": {
-			"textures": "textures/items/silkworm/default"
+			"textures": [
+				"textures/items/silkworm/default",
+				"textures/items/silkworm/cooked"
+			]
 		},
 		"pebble": {
 			"textures": "textures/items/pebble/stone"
@@ -56,6 +59,13 @@
 		},
 		"exnihilo_bucket": {
 			"textures": "textures/items/bucket/witch_water"
+		},
+		"doll": {
+			"textures": [
+				"textures/items/doll/porcelain",
+				"textures/items/doll/blaze",
+				"textures/items/doll/ender"
+			]
 		}
 	}
 }
