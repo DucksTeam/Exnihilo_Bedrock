@@ -67,6 +67,11 @@
 				"run_command": {
 					"command": "tp @s ~~0.001875~"
 				}
+			},
+			"fire": {
+				"run_command": {
+					"command": "tp @s ~~0.0025~"
+				}
 			}
 		}
 	}

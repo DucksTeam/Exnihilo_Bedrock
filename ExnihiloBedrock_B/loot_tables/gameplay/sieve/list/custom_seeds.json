@@ -3,7 +3,7 @@
 		"rolls": 1,
 		"entries": [{
 			"type": "item",
-			"name": "exnihilo:anciant_spores",
+			"name": "exnihilo:ancient_spores",
 			"weight": 4
 		}, {
 			"type": "empty",

@@ -14,7 +14,6 @@
 				"texture": "silkworm",
 				"frame": 0
 			},
-			"minecraft:max_stack_size": 16,
 			"minecraft:on_use_on": {
 				"on_use_on": {
 					"event": "setblock"

@@ -6,7 +6,8 @@
 				"default": {
 					"on_entry": [
 						"/execute @s ~~~ detect ~~-1.9~ torch 5 fill ~~~ ~~~ exnihilo:crucible_lava 0 replace exnihilo:crucible",
-						"/execute @s ~~~ detect ~~-1.9~ lava 0 fill ~~~ ~~~ exnihilo:crucible_lava 0 replace exnihilo:crucible"
+						"/execute @s ~~~ detect ~~-1.9~ lava 0 fill ~~~ ~~~ exnihilo:crucible_lava 0 replace exnihilo:crucible",
+						"/execute @s ~~~ detect ~~-1.9~ fire 0 fill ~~~ ~~~ exnihilo:crucible_lava 0 replace exnihilo:crucible"
 					],
 					"transitions": [{
 						"loop": "(1.0)"

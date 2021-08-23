@@ -8,14 +8,18 @@
 		}, {
 			"type": "item",
 			"name": "minecraft:quartz",
-			"weight": 5
+			"weight": 10
 		}, {
 			"type": "item",
 			"name": "minecraft:ghast_tear",
-			"weight": 10
+			"weight": 20
+		}, {
+			"type": "item",
+			"name": "minecraft:nether_wart",
+			"weight": 15
 		}, {
 			"type": "empty",
-			"weight": 70
+			"weight": 40
 		}]
 	}]
 }

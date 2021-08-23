@@ -4,22 +4,22 @@
 		"entries": [{
 			"type": "item",
 			"name": "minecraft:chorus_fruit",
-			"weight": 10
+			"weight": 20
 		}, {
 			"type": "item",
 			"name": "minecraft:chorus_flower",
-			"weight": 4
+			"weight": 8
 		}, {
 			"type": "item",
 			"name": "minecraft:ender_pearl",
-			"weight": 6
+			"weight": 12
 		}, {
 			"type": "item",
 			"name": "minecraft:elytra",
-			"weight": 1
+			"weight": 2
 		}, {
 			"type": "empty",
-			"weight": 79
+			"weight": 58
 		}]
 	}]
 }

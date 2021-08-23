@@ -6,7 +6,8 @@
 				"default": {
 					"on_entry": [
 						"/execute @e[type=exnihilo:crucible_material_binding_texture,c=1,r=1] ~~-1.3125~ detect ~~~ torch 5 event entity @s torch",
-						"/execute @e[type=exnihilo:crucible_material_binding_texture,c=1,r=1] ~~-1.3125~ detect ~~~ lava 0 event entity @s lava"
+						"/execute @e[type=exnihilo:crucible_material_binding_texture,c=1,r=1] ~~-1.3125~ detect ~~~ lava 0 event entity @s lava",
+						"/execute @e[type=exnihilo:crucible_material_binding_texture,c=1,r=1] ~~-1.3125~ detect ~~~ fire 0 event entity @s fire"
 					]
 				}
 			}

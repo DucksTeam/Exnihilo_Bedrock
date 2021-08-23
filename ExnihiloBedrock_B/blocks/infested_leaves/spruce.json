@@ -9,6 +9,7 @@
 		},
 
 		"components": {
+			"tag:exnihilo:infested_leaves": {},
 			"minecraft:block_light_absorption": 0,
 			"minecraft:loot": "loot_tables/empty.json",
 			"minecraft:destroy_time": 0.3,
@@ -48,7 +49,7 @@
 						"fill ~~~-1 ~~~-1 exnihilo:infested_spruce_leaves 0 replace leaves 1",
 						"fill ~~1~ ~~1~ exnihilo:infested_spruce_leaves 0 replace leaves 1",
 						"fill ~~-1~ ~~-1~ exnihilo:infested_spruce_leaves 0 replace leaves 1",
-						
+
 						"fill ~1~~ ~1~~ exnihilo:infested_spruce_leaves 0 replace leaves 5",
 						"fill ~-1~~ ~-1~~ exnihilo:infested_spruce_leaves 0 replace leaves 5",
 						"fill ~~~1 ~~~1 exnihilo:infested_spruce_leaves 0 replace leaves 5",
@@ -59,7 +60,7 @@
 				}
 			}
 		},
-				"permutations": [{
+		"permutations": [{
 			"condition": "q.block_property('exnihilo:tick_to_infested') == 0",
 			"components": {
 				"minecraft:material_instances": {

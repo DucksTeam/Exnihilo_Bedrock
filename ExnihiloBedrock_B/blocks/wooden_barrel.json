@@ -72,7 +72,7 @@
 						"exnihilo:filled_part": 10
 					}
 				}, {
-					"condition": "q.get_equipped_item_name(0) == 'sapling' || q.get_equipped_item_name(0) == 'leaves' || q.get_equipped_item_name(0) == 'leaves2'",
+					"condition": "q.get_equipped_item_name(0) == 'sapling' || q.get_equipped_item_name(0) == 'leaves' || q.get_equipped_item_name(0) == 'leaves2' || q.get_equipped_item_name(0) == 'string'",
 					"decrement_stack": {},
 					"run_command": {
 						"command": "playsound block.composter.fill @a ~~~ 1.0"
@@ -143,7 +143,7 @@
 				"sequence": [{
 					"condition": "q.block_property('exnihilo:compost_type') == 1 && q.block_property('exnihilo:filled_part') < 10",
 					"sequence": [{
-						"condition": "q.get_equipped_item_name(0) == 'sapling' || q.get_equipped_item_name(0) == 'leaves'",
+						"condition": "q.get_equipped_item_name(0) == 'sapling' || q.get_equipped_item_name(0) == 'leaves' || q.get_equipped_item_name(0) == 'leaves2'",
 						"decrement_stack": {},
 						"run_command": {
 							"command": "playsound block.composter.fill @a ~~~ 1.0"
@@ -152,6 +152,15 @@
 							"exnihilo:mode": 2,
 							"exnihilo:compost_type": 1,
 							"exnihilo:filled_part": "q.block_property('exnihilo:filled_part') + 1"
+						}
+					}, {
+						"condition": "q.get_equipped_item_name(0) == 'string'",
+						"decrement_stack": {},
+						"run_command": {
+							"command": "playsound block.composter.fill @a ~~~ 1.0"
+						},
+						"trigger": {
+							"event": "string_compost_interact"
 						}
 					}]
 				}, {
@@ -195,6 +204,23 @@
 						"exnihilo:compost_type": 2,
 						"exnihilo:filled_part": 10,
 						"exnihilo:transform": 0
+					}
+				}]
+			},
+			"string_compost_interact": {
+				"randomize": [{
+					"weight": 60,
+					"set_block_property": {
+						"exnihilo:mode": 2,
+						"exnihilo:compost_type": 1,
+						"exnihilo:filled_part": "q.block_property('exnihilo:filled_part') + 1"
+					}
+				}, {
+					"weight": 40,
+					"set_block_property": {
+						"exnihilo:mode": 2,
+						"exnihilo:compost_type": 1,
+						"exnihilo:filled_part": "q.block_property('exnihilo:filled_part')"
 					}
 				}]
 			}
