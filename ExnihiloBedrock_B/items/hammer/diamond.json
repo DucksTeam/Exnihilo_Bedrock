@@ -66,6 +66,14 @@
 					"on_dig": {
 						"event": "damage_and_transform_to_crushed_end_stone"
 					}
+				}, {
+					"block": {
+						"tags": "q.any_tag('excompressum:compressed')"
+					},
+					"speed": 8,
+					"on_dig": {
+						"event": "damage"
+					}
 				}]
 			}
 		},
