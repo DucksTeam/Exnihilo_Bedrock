@@ -1,12 +1,14 @@
 {
-	"format_version": "1.16.221",
+	"format_version": "1.17.30",
 	"minecraft:block": {
 		"description": {
-			"identifier": "exnihilo:mesh_iron",
-			"register_to_creative_menu": true
+			"identifier": "exnihilo:mesh_iron"
 		},
 		
 		"components": {
+			"minecraft:creative_category": {
+				"category": "Items"
+			},
 			"minecraft:geometry": "geometry.mesh",
 			"minecraft:material_instances": {
 				"*": {

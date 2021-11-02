@@ -1,9 +1,8 @@
 {
-	"format_version": "1.16.221",
+	"format_version": "1.17.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "exnihilo:stone_barrel",
-			"register_to_creative_menu": true,
 			"properties": {
 				"exnihilo:mode": [0,1,2],
 				"exnihilo:liquid_type": [0,1,2,3],
@@ -13,6 +12,9 @@
 		},
 
 		"components": {
+			"minecraft:creative_category": {
+				"category": "Items"
+			},
 			"minecraft:block_light_absorption": 10,
 			"minecraft:destroy_time": 2.0,
 			"minecraft:explosion_resistance": 3.0,
@@ -40,11 +42,8 @@
 			"empty_interact": {
 				"sequence": [{
 					"condition": "q.get_equipped_item_name(0) == 'lava_bucket'",
-					"decrement_stack": {
-						"ignore_game_mode": true
-					},
-					"spawn_loot": {
-						"table": "loot_tables/gameplay/wooden_barrel/bucket.json"
+					"transform_item": {
+						"transform": "bucket"
 					},
 					"run_command": {
 						"command": "playsound bucket.empty_lava @a ~~~ 1.0"
@@ -56,11 +55,8 @@
 					}
 				}, {
 					"condition": "q.get_equipped_item_name(0) == 'water_bucket'",
-					"decrement_stack": {
-						"ignore_game_mode": true
-					},
-					"spawn_loot": {
-						"table": "loot_tables/gameplay/wooden_barrel/bucket.json"
+					"transform_item": {
+						"transform": "bucket"
 					},
 					"run_command": {
 						"command": "playsound bucket.empty_water @a ~~~ 1.0"
@@ -72,11 +68,8 @@
 					}
 				}, {
 					"condition": "q.get_equipped_item_name(0) == 'witch_water_bucket'",
-					"decrement_stack": {
-						"ignore_game_mode": true
-					},
-					"spawn_loot": {
-						"table": "loot_tables/gameplay/wooden_barrel/bucket.json"
+					"transform_item": {
+						"transform": "bucket"
 					},
 					"run_command": {
 						"command": "playsound bucket.empty_water @a ~~~ 1.0"

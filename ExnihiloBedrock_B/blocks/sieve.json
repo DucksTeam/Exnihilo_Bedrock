@@ -1,9 +1,8 @@
 {
-	"format_version": "1.16.221",
+	"format_version": "1.17.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "exnihilo:sieve_block",
-			"register_to_creative_menu": true,
 			"properties": {
 				"exnihilo:mesh": [0,1,2,3,4],
 				"exnihilo:block": [0,1,2,3,4,5,6],
@@ -12,12 +11,15 @@
 		},
 
 		"components": {
+			"minecraft:creative_category": {
+				"category": "Items"
+			},
 			"minecraft:block_light_absorption": 5,
 			"minecraft:destroy_time": 2.0,
 			"minecraft:explosion_resistance": 3.0,
 			"minecraft:immovable": true,
 			"minecraft:unwalkable": true,
-			"minecraft:geometry": "geometry.sieve",
+			"minecraft:geometry": "geometry.sieve_empty_base",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "planks"
@@ -74,6 +76,9 @@
 						"spawn_loot": {
 							"table": "loot_tables/gameplay/sieve/mesh/string.json"
 						},
+						"run_command": {
+							"command": "tp @e[type=item,name=\"string mesh\",c=1] ~~0.5~"
+						},
 						"set_block_property": {
 							"exnihilo:mesh": 0
 						}
@@ -81,6 +86,9 @@
 						"condition": "q.block_property('exnihilo:mesh') == 2",
 						"spawn_loot": {
 							"table": "loot_tables/gameplay/sieve/mesh/flint.json"
+						},
+						"run_command": {
+							"command": "tp @e[type=item,name=\"flint stiffened mesh\",c=1] ~~0.5~"
 						},
 						"set_block_property": {
 							"exnihilo:mesh": 0
@@ -90,6 +98,9 @@
 						"spawn_loot": {
 							"table": "loot_tables/gameplay/sieve/mesh/iron.json"
 						},
+						"run_command": {
+							"command": "tp @e[type=item,name=\"iron stiffened mesh\",c=1] ~~0.5~"
+						},
 						"set_block_property": {
 							"exnihilo:mesh": 0
 						}
@@ -97,6 +108,9 @@
 						"condition": "q.block_property('exnihilo:mesh') == 4",
 						"spawn_loot": {
 							"table": "loot_tables/gameplay/sieve/mesh/diamond.json"
+						},
+						"run_command": {
+							"command": "tp @e[type=item,name=\"diamond stiffened mesh\",c=1] ~~0.5~"
 						},
 						"set_block_property": {
 							"exnihilo:mesh": 0
@@ -179,6 +193,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/string/gravel.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -187,6 +204,9 @@
 							"condition": "q.block_property('exnihilo:block') == 2",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/string/dirt.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -197,6 +217,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/string/sand.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -205,6 +228,9 @@
 							"condition": "q.block_property('exnihilo:block') == 4",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/string/dust.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -218,6 +244,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/flint/gravel.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -226,6 +255,9 @@
 							"condition": "q.block_property('exnihilo:block') == 2",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/flint/dirt.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -236,6 +268,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/flint/sand.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -244,6 +279,9 @@
 							"condition": "q.block_property('exnihilo:block') == 4",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/flint/dust.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -257,6 +295,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/iron/gravel.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -265,6 +306,9 @@
 							"condition": "q.block_property('exnihilo:block') == 3",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/iron/sand.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -275,6 +319,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/iron/dust.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -284,6 +331,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/iron/crushed_netherrack.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -292,6 +342,9 @@
 							"condition": "q.block_property('exnihilo:block') == 6",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/iron/crushed_end_stone.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -305,6 +358,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/diamond/gravel.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -313,6 +369,9 @@
 							"condition": "q.block_property('exnihilo:block') == 3",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/diamond/sand.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -323,6 +382,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/diamond/dust.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -332,6 +394,9 @@
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/diamond/crushed_netherrack.json"
 							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
+							},
 							"set_block_property": {
 								"exnihilo:block": 0,
 								"exnihilo:progress": 0
@@ -340,6 +405,9 @@
 							"condition": "q.block_property('exnihilo:block') == 6",
 							"spawn_loot": {
 								"table": "loot_tables/gameplay/sieve/diamond/crushed_end_stone.json"
+							},
+							"run_command": {
+								"command": "tp @e[type=item,r=0.5] ~~0.5~"
 							},
 							"set_block_property": {
 								"exnihilo:block": 0,
@@ -354,21 +422,33 @@
 					"condition": "q.block_property('exnihilo:mesh') == 1",
 					"spawn_loot": {
 						"table": "loot_tables/gameplay/sieve/mesh/string.json"
+					},
+					"run_command": {
+						"command": "tp @e[type=item,name=\"string mesh\",c=1] ~~0.5~"
 					}
 				}, {
 					"condition": "q.block_property('exnihilo:mesh') == 2",
 					"spawn_loot": {
 						"table": "loot_tables/gameplay/sieve/mesh/flint.json"
+					},
+					"run_command": {
+						"command": "tp @e[type=item,name=\"flint stiffened mesh\",c=1] ~~0.5~"
 					}
 				}, {
 					"condition": "q.block_property('exnihilo:mesh') == 3",
 					"spawn_loot": {
 						"table": "loot_tables/gameplay/sieve/mesh/iron.json"
+					},
+					"run_command": {
+						"command": "tp @e[type=item,name=\"iron stiffened mesh\",c=1] ~~0.5~"
 					}
 				}, {
 					"condition": "q.block_property('exnihilo:mesh') == 4",
 					"spawn_loot": {
 						"table": "loot_tables/gameplay/sieve/mesh/diamond.json"
+					},
+					"run_command": {
+						"command": "tp @e[type=item,name=\"diamond stiffened mesh\",c=1] ~~0.5~"
 					}
 				}]
 			}

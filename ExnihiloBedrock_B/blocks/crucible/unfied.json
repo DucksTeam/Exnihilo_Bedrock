@@ -1,12 +1,14 @@
 {
-	"format_version": "1.16.221",
+	"format_version": "1.17.30",
 	"minecraft:block": {
 		"description": {
-			"identifier": "exnihilo:crucible_unfired",
-			"register_to_creative_menu": true
+			"identifier": "exnihilo:crucible_unfired"
 		},
 		
 		"components": {
+			"minecraft:creative_category": {
+				"category": "Items"
+			},
 			"minecraft:block_light_absorption": 10,
 			"minecraft:destroy_time": 2.0,
 			"minecraft:geometry": "geometry.crucible_empty",

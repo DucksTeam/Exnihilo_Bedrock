@@ -1,12 +1,14 @@
 {
-	"format_version": "1.16.221",
+	"format_version": "1.17.30",
 	"minecraft:block": {
 		"description": {
-			"identifier": "exnihilo:dust_block",
-			"register_to_creative_menu": true
+			"identifier": "exnihilo:dust_block"
 		},
 		
 		"components": {
+			"minecraft:creative_category": {
+				"category": "Construction"
+			},
 			"minecraft:block_light_absorption": 15,
 			"minecraft:destroy_time": 0.7,
 			"minecraft:unit_cube": {},

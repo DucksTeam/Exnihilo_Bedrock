@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.221",
+	"format_version": "1.17.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "exnihilo:witch_water"
@@ -32,20 +32,16 @@
 				}
 			},
 			"minecraft:on_interact": {
+				"condition": "q.is_sneaking",
 				"event": "interact"
 			}
 		},
 		"events": {
 			"interact": {
-				"sequence": [{
-					"condition": "q.is_sneaking",
-					"spawn_loot": {
-						"table": "loot_tables/gameplay/witch_water/bucket.json"
-					},
-					"set_block": {
-						"block_type": "air"
-					}
-				}]
+				"die": {},
+				"spawn_loot": {
+					"table": "loot_tables/gameplay/witch_water/bucket.json"
+				}
 			}
 		}
 	}

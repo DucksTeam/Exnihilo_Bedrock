@@ -1,9 +1,8 @@
 {
-	"format_version": "1.16.221",
+	"format_version": "1.17.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "exnihilo:wooden_barrel",
-			"register_to_creative_menu": true,
 			"properties": {
 				"exnihilo:mode": [0,1,2],
 				"exnihilo:liquid_type": [0,1,2],
@@ -14,6 +13,9 @@
 		},
 
 		"components": {
+			"minecraft:creative_category": {
+				"category": "Items"
+			},
 			"minecraft:block_light_absorption": 10,
 			"minecraft:destroy_time": 2.0,
 			"minecraft:explosion_resistance": 3.0,
@@ -41,11 +43,8 @@
 			"empty_interact": {
 				"sequence": [{
 					"condition": "q.get_equipped_item_name(0) == 'water_bucket'",
-					"decrement_stack": {
-						"ignore_game_mode": true
-					},
-					"spawn_loot": {
-						"table": "loot_tables/gameplay/wooden_barrel/bucket.json"
+					"transform_item": {
+						"transform": "bucket"
 					},
 					"run_command": {
 						"command": "playsound bucket.empty_water @a ~~~ 1.0"
@@ -57,11 +56,8 @@
 					}
 				}, {
 					"condition": "q.get_equipped_item_name(0) == 'witch_water_bucket'",
-					"decrement_stack": {
-						"ignore_game_mode": true
-					},
-					"spawn_loot": {
-						"table": "loot_tables/gameplay/wooden_barrel/bucket.json"
+					"transform_item": {
+						"transform": "bucket"
 					},
 					"run_command": {
 						"command": "playsound bucket.empty_water @a ~~~ 1.0"
@@ -94,7 +90,10 @@
 						"table": "loot_tables/gameplay/wooden_barrel/water_bucket.json"
 					},
 					"run_command": {
-						"command": "playsound bucket.fill_water @a ~~~ 1.0"
+						"command": [
+							"playsound bucket.fill_water @a ~~~ 1.0",
+							"tp @e[type=item,name=\"water bucket\",c=1] ~~0.5~"
+						]
 					},
 					"set_block_property": {
 						"exnihilo:mode": 0,
@@ -110,7 +109,10 @@
 						"table": "loot_tables/gameplay/witch_water/bucket.json"
 					},
 					"run_command": {
-						"command": "playsound bucket.fill_water @a ~~~ 1.0"
+						"command": [
+							"playsound bucket.fill_water @a ~~~ 1.0",
+							"tp @e[type=item,name=\"witch water bucket\",c=1] ~~0.5~"
+						]
 					},
 					"set_block_property": {
 						"exnihilo:mode": 0,
@@ -169,7 +171,10 @@
 						"table": "loot_tables/gameplay/wooden_barrel/dirt.json"
 					},
 					"run_command": {
-						"command": "playsound dig.gravel @a ~~~ 1.0 0.8"
+						"command": [
+							"playsound dig.gravel @a ~~~ 1.0 0.8",
+							"tp @e[type=item,name=dirt,c=1] ~~0.5~"
+						]
 					},
 					"set_block_property": {
 						"exnihilo:mode": 0,
@@ -182,7 +187,10 @@
 						"table": "loot_tables/gameplay/wooden_barrel/clay_block.json"
 					},
 					"run_command": {
-						"command": "playsound dig.gravel @a ~~~ 1.0"
+						"command": [
+							"playsound dig.gravel @a ~~~ 1.0",
+							"tp @e[type=item,name=\"clay block\",c=1] ~~0.5~"
+						]
 					},
 					"set_block_property": {
 						"exnihilo:mode": 0,
