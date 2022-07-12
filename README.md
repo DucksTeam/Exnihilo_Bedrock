@@ -1,85 +1,87 @@
 # Exnihilo Bedrock
-<b>Inspired from Exnihilo Adsensio</b><br>
-## *Made it all from one tree*
+<b>Inspired from Exnihilo Adsensio</b>
+## *Made it all from tree*
+# Project's Rewriting And Update New Features For 1.18.30
+## Features Progress
 
-## Features
-1. [x] Dust Block
-2. [x] Hammer
-	1. [x] Wooden Hammer
-	2. [x] Stone Hammer
-	3. [x] Iron Hammer
-	4. [x] Golden Hammer
-	5. [x] Diamond Hammer
-3. [x] Crook
-	1. [x] Wooden Crook 
-	2. [x] Bone Crook
-	3. [x] Crook can break the block list below to drop items
-		1. [x] Oak Leaves ( random sapling leaves type )
-		2. [x] Birch Leaves ( random sapling leaves type )
-		3. [x] Jungle Leaves ( random sapling leaves type )
-		4. [x] Spruce Leaves ( random sapling leaves type )
-		5. [x] Acacia Leaves ( random sapling leaves2 type )
-		6. [x] Dark Oak Leaves ( random sapling leaves2 type )
-		7. [x] Infested Leaves
-4. [x] Silkworm 
-	1. [x] Silkworm
-	2. [x] Cooked Silkworm
-5. [x] Infested Leaves ( Leaves from tree only )
-	1. [x] Can Spreadout to other leaves
-		1. [x] Supported leaves type
-			1. [x] Oak Leaves 
-			2. [x] Birch Leaves
-			3. [x] Jungle Leaves
-			4. [x] Spruce Leaves
-			5. [x] Acacia Leaves
-			6. [x] Dark Oak Leaves
-	2. [x] Support biome color 
-		1. [x] Plains
-6. [x] Wooden Barrel
+- [x] Dust Block
+- [ ] Hammer
+	- [x] Wooden Hammer
+	- [x] Stone Hammer
+	- [x] Iron Hammer
+	- [x] Golden Hammer
+	- [x] Diamond Hammer
+	- [x] Netherite Hammer
+	- [ ] Enchantable
+	- [ ] Ore Excavation Custom Enchant
+- [ ] Crook
+	- [ ] Wooden Crook
+	- [ ] Stone Crook
+	- [ ] Iron Crook
+	- [ ] Enchantable
+	- [ ] Ore Excavation Custom Enchant
+	- [ ] Crook can break the block list below to drop items
+		- [ ] Overworld Tree Leaves
+		- [ ] Nether Tree Leaves
+		- [ ] Custom Leaves
+- [ ] Silkworm
+	- [ ] Silkworm
+	- [ ] Cooked Silkworm
+	- [ ] Enchantable Silkworm
+	- [ ] Enchantable Cooked Silkworm
+- [ ] Infested Leaves
+	- [ ] Can Spreadout to other leaves
+		- [ ] Supported leaves type
+			- [ ] Overworld Tree Leaves
+			- [ ] Nether Tree Leaves
+	- [ ] Support biome color
+- [ ] Wooden Barrel
 	- <s>Can store water when raining</s><em>(Temporarily Removed)</em>
-	- [x] Can get water with empty iron bucket
-	- [x] Interact with water iron bucket when it empty, it will transform to empty iron bucket<br>
-	( can't using event trigger "transform_item") <b>[MCPE-102422 Issue](https://bugs.mojang.com/browse/MCPE-102422)</b>
-	- [x] Can put organic matter in the block to convert to dirt<br>
-	( sapling, leaves )
-7. [x] Sieve
-	- [x] Pebble
-		- [x] Stone Pebble 
-	- [x] Mesh 
+	- [ ] Can get water with empty iron bucket
+	- [ ] Interact with water iron bucket when it empty, it will transform to empty iron bucket
+	- [ ] Can put organic matter in the block to convert to dirt
+		- [ ] 
+- [ ] Sieve
+	- [ ] Pebble
+		- [x] Stone Pebble
+		- [x] Granite Pebble
+		- [x] Diorite Pebble
+		- [x] Andesite Pebble
+		- [ ] Pebble's Throwables
+	- [x] Mesh
 		- [x] String Mesh 
 		- [x] Flint Stiffened Mesh 
 		- [x] Iron Stiffened Mesh
 		- [x] Diamond Stiffened Mesh
-	- [x] Ore 
-		- [x] Ore Piece
-			- [x] Iron
-			- [x] Gold
-		- [x] Ore Chunk
-			- [x] Iron
-			- [x] Gold
-		- [ ] Ore Dust ( Maybe )
-8. [x] Crucible
-	- [x] Porcelain Clay
-	- [x] Unfired Crucible
-9. [x] Stone Barrel
-10. [ ] Other Utilities
-	- [x] Ancient Spores
-	- [x] Acacia Seed
-	- [x] Birch Seed
-	- [x] Carrot Seeds
-	- [x] Cactus Seeds
-	- [x] Dark Oak Seed
-	- [x] Grass Seeds
-	- [x] Jungle Seed
-	- [x] Oak Seed
-	- [x] Spruce Seed
-	- [x] Sugarcane Seeds
-	- [x] Potato Seeds
+		- [x] Netherite Stiffened Mesh
+	- [ ] Ore 
+		- [ ] Ore Piece
+			- [ ] Iron
+			- [ ] Gold
+			- [ ] Copper
+- [ ] Crucible
+	- [ ] >> Have no idea now
+- [ ] Porcelain Clay
+- [ ] Unfired Crucible
+- [ ] Stone Barrel
+- [ ] Other Utilities
+	- [ ] Ancient Spores
+	- [ ] Acacia Seed
+	- [ ] Birch Seed
+	- [ ] Carrot Seeds
+	- [ ] Cactus Seeds
+	- [ ] Dark Oak Seed
+	- [ ] Grass Seeds
+	- [ ] Jungle Seed
+	- [ ] Oak Seed
+	- [ ] Spruce Seed
+	- [ ] Sugarcane Seeds
+	- [ ] Potato Seeds
 	- [x] Crushed Netherrack
 	- [x] Crushed Endstone
-	- [x] Blazing Doll
-	- [x] Creeping Doll
-	- [x] Witchwater ( Hardest )
+	- [ ] Blazing Doll
+	- [ ] Creeping Doll
+	- [ ] Witchwater ( Hardest )
 
 ## Lisence
 ### <u>MikeLydeamore/ExnihiloAdscencio</u> <b>[MIT Lisence](https://github.com/MikeLydeamore/ExNihiloAdscensio/blob/master/LICENSE)</b>

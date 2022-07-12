@@ -1,0 +1,36 @@
+{
+	"resource_pack_name": "Exnihilo Bedrock",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"hammer_wood": {
+			"textures": "textures/items/hammer_wood"
+		},
+		"hammer_stone": {
+			"textures": "textures/items/hammer_stone"
+		},
+		"hammer_iron": {
+			"textures": "textures/items/hammer_iron"
+		},
+		"hammer_gold": {
+			"textures": "textures/items/hammer_gold"
+		},
+		"hammer_diamond": {
+			"textures": "textures/items/hammer_diamond"
+		},
+		"hammer_netherite": {
+			"textures": "textures/items/hammer_netherite"
+		},
+		"pebble_stone": {
+			"textures": "textures/items/pebble/stone"
+		},
+		"pebble_andesite": {
+			"textures": "textures/items/pebble/andesite"
+		},
+		"pebble_diorite": {
+			"textures": "textures/items/pebble/diorite"
+		},
+		"pebble_granite": {
+			"textures": "textures/items/pebble/granite"
+		}
+	}
+}

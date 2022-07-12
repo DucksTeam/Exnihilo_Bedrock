@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "exnihilo:hammer_netherite"
+        },
+        "tags": [
+            "smithing_table"
+        ],
+        "pattern": [
+            "H",
+            "M"
+        ],
+        "key": {
+            "H": {
+                "item": "exnihilo:hammer_diamond"
+            },
+            "M": {
+                "item": "netherite_ingot"
+            }
+        },
+        "result": {
+            "item": "exnihilo:hammer_netherite"
+        }
+    }
+}

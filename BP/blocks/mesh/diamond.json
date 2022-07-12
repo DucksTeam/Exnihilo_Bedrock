@@ -1,0 +1,38 @@
+{
+	"format_version": "1.18.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "exnihilo:mesh_diamond"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.mesh",
+			"minecraft:creative_category": {
+				"category": "items",
+				"group": "items"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mesh_diamond"
+				}
+			},
+			"minecraft:placement_filter": {
+				"allowed_faces": [
+					"down"
+				],
+				"block_filter": [
+					"dragon_egg"
+				]
+			},
+			"minecraft:on_placed": {
+				"event": "exnihilo:destroy"
+			}
+		},
+		"events": {
+			"exnihilo:destroy": {
+				"die": {
+					"target": "self"
+				}
+			}
+		}
+	}
+}

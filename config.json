@@ -1,0 +1,43 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Exnihilo Bedrock",
+	"namespace": "bridge",
+	"authors": [
+		"NguyenDuck"
+	],
+	"targetVersion": "1.18.30",
+	"description": "Included in tree",
+	"experimentalGameplay": {
+		"enableGameTestFramework": true,
+		"holidayCreatorFeatures": true,
+		"upcomingCreatorFeatures": true
+	},
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Exnihilo Bedrock"
+				}
+			]
+		]
+	},
+	"bridge": {
+		"darkTheme": "bridge.easterEgg.dark_halloween"
+	}
+}

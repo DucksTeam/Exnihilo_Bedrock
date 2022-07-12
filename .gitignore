@@ -4,4 +4,6 @@ Desktop.ini
 .bridge/*
 !.bridge/compiler/
 !.bridge/extensions
+BP/components
+previews
 builds

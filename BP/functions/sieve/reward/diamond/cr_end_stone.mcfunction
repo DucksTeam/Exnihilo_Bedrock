@@ -1,0 +1,1 @@
+loot spawn ~~0.5~ loot "sieve/diamond/cr_end_stone"

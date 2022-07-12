@@ -1,0 +1,40 @@
+{
+	"format_version": "1.18.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "exnihilo:hammer_transform_gravel",
+			"is_summonable": true,
+			"animations": {
+				"hammer_transform": "controller.animation.hammer_transform_gravel"
+			},
+			"scripts": {
+				"animate": [
+					"hammer_transform"
+				]
+			}
+		},
+		"components": {
+			"minecraft:inventory": {
+				"inventory_size": 1,
+				"private": true
+			},
+			"minecraft:item_hopper": {},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:instant_despawn": {
+				"remove_child_entities": true
+			}
+		}
+	}
+}

@@ -1,0 +1,147 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "exnihilo:hammer_stone"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"on_dig": {
+					"event": "exnihilo:remove_durability"
+				},
+				"destroy_speeds": [
+					{
+						"block": "cobblestone",
+						"on_dig": {
+							"event": "exnihilo:hammer_transform_gravel"
+						},
+						"speed": 2
+					},
+					{
+						"block": "gravel",
+						"on_dig": {
+							"event": "exnihilo:hammer_transform_sand"
+						},
+						"speed": 2
+					},
+					{
+						"block": "sand",
+						"on_dig": {
+							"event": "exnihilo:hammer_transform_dust"
+						},
+						"speed": 2
+					},
+					{
+						"block": "netherrack",
+						"on_dig": {
+							"event": "exnihilo:hammer_transform_cr_netherrack"
+						},
+						"speed": 2
+					},
+					{
+						"block": "end_stone",
+						"on_dig": {
+							"event": "exnihilo:hammer_transform_cr_end_stone"
+						},
+						"speed": 2
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 131
+			},
+			"minecraft:enchantable": {
+				"slot": "pickaxe",
+				"value": 7
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:icon": {
+				"texture": "hammer_stone"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:mining_speed": 3,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"cobblestone"
+						],
+						"repair_amount": "math.floor(query.max_durability/2.5)"
+					}
+				]
+			}
+		},
+		"events": {
+			"exnihilo:remove_durability": {
+				"damage": {
+					"amount": 1,
+					"type": "all"
+				}
+			},
+			"exnihilo:hammer_transform_gravel": {
+				"damage": {
+					"amount": 1,
+					"type": "all"
+				},
+				"run_command": {
+					"command": [
+						"summon exnihilo:hammer_transform_gravel"
+					],
+					"target": "block"
+				}
+			},
+			"exnihilo:hammer_transform_sand": {
+				"damage": {
+					"amount": 1,
+					"type": "all"
+				},
+				"run_command": {
+					"command": [
+						"summon exnihilo:hammer_transform_sand"
+					],
+					"target": "block"
+				}
+			},
+			"exnihilo:hammer_transform_dust": {
+				"damage": {
+					"amount": 1,
+					"type": "all"
+				},
+				"run_command": {
+					"command": [
+						"summon exnihilo:hammer_transform_dust"
+					],
+					"target": "block"
+				}
+			},
+			"exnihilo:hammer_transform_cr_netherrack": {
+				"damage": {
+					"amount": 1,
+					"type": "all"
+				},
+				"run_command": {
+					"command": [
+						"summon exnihilo:hammer_transform_cr_netherrack"
+					],
+					"target": "block"
+				}
+			},
+			"exnihilo:hammer_transform_cr_end_stone": {
+				"damage": {
+					"amount": 1,
+					"type": "all"
+				},
+				"run_command": {
+					"command": [
+						"summon exnihilo:hammer_transform_cr_end_stone"
+					],
+					"target": "block"
+				}
+			}
+		}
+	}
+}

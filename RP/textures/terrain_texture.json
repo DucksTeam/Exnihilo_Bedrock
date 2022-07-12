@@ -1,0 +1,101 @@
+{
+    "num_mip_levels": 4,
+    "padding": 8,
+    "resource_pack_name": "Exnihilo Bedrock",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "dust": {
+            "textures": "textures/blocks/dust"
+        },
+        "crushed_netherrack": {
+            "textures": "textures/blocks/crushed_netherrack"
+        },
+        "crushed_end_stone": {
+            "textures": "textures/blocks/crushed_end_stone"
+        },
+        "sieve_oak_empty": {
+            "textures": "textures/blocks/sieve_oak_empty_empty"
+        },
+        "sieve_oak_string_empty": {
+            "textures": "textures/blocks/sieve_oak_string_empty"
+        },
+        "sieve_oak_string_dirt": {
+            "textures": "textures/blocks/sieve_oak_string_dirt"
+        },
+        "sieve_oak_string_gravel": {
+            "textures": "textures/blocks/sieve_oak_string_gravel"
+        },
+        "sieve_oak_flint_empty": {
+            "textures": "textures/blocks/sieve_oak_flint_empty"
+        },
+        "sieve_oak_flint_dirt": {
+            "textures": "textures/blocks/sieve_oak_flint_dirt"
+        },
+        "sieve_oak_flint_gravel": {
+            "textures": "textures/blocks/sieve_oak_flint_gravel"
+        },
+        "sieve_oak_flint_sand": {
+            "textures": "textures/blocks/sieve_oak_flint_sand"
+        },
+        "sieve_oak_flint_dust": {
+            "textures": "textures/blocks/sieve_oak_flint_dust"
+        },
+        "sieve_oak_iron_empty": {
+            "textures": "textures/blocks/sieve_oak_iron_empty"
+        },
+        "sieve_oak_iron_gravel": {
+            "textures": "textures/blocks/sieve_oak_iron_gravel"
+        },
+        "sieve_oak_iron_sand": {
+            "textures": "textures/blocks/sieve_oak_iron_sand"
+        },
+        "sieve_oak_iron_dust": {
+            "textures": "textures/blocks/sieve_oak_iron_dust"
+        },
+        "sieve_oak_iron_cr_netherrack": {
+            "textures": "textures/blocks/sieve_oak_iron_cr_netherrack"
+        },
+        "sieve_oak_iron_cr_end_stone": {
+            "textures": "textures/blocks/sieve_oak_iron_cr_end_stone"
+        },
+        "sieve_oak_diamond_empty": {
+            "textures": "textures/blocks/sieve_oak_diamond_empty"
+        },
+        "sieve_oak_diamond_gravel": {
+            "textures": "textures/blocks/sieve_oak_diamond_gravel"
+        },
+        "sieve_oak_diamond_sand": {
+            "textures": "textures/blocks/sieve_oak_diamond_sand"
+        },
+        "sieve_oak_diamond_cr_netherrack": {
+            "textures": "textures/blocks/sieve_oak_diamond_cr_netherrack"
+        },
+        "sieve_oak_diamond_cr_end_stone": {
+            "textures": "textures/blocks/sieve_oak_diamond_cr_end_stone"
+        },
+        "sieve_oak_netherite_empty": {
+            "textures": "textures/blocks/sieve_oak_netherite_empty"
+        },
+        "sieve_oak_netherite_cr_netherrack": {
+            "textures": "textures/blocks/sieve_oak_netherite_cr_netherrack"
+        },
+        "sieve_oak_netherite_cr_end_stone": {
+            "textures": "textures/blocks/sieve_oak_netherite_cr_end_stone"
+        },
+        "mesh_string": {
+            "textures": "textures/blocks/wool_colored_white"
+        },
+        "mesh_flint": {
+            "textures": "textures/blocks/wool_colored_silver"
+        },
+        "mesh_iron": {
+            "textures": "textures/blocks/wool_colored_gray"
+        },
+        "mesh_diamond": {
+            "textures": "textures/blocks/wool_colored_light_blue"
+        },
+        "mesh_netherite": {
+            "textures": "textures/blocks/mesh_netherite"
+        }
+    }
+}

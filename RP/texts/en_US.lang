@@ -1,0 +1,24 @@
+tile.exnihilo:mesh_string.name=String Mesh
+tile.exnihilo:mesh_flint.name=Flint Stiffened Mesh
+tile.exnihilo:mesh_iron.name=Iron Stiffened Mesh
+tile.exnihilo:mesh_diamond.name=Diamond Stiffened Mesh
+tile.exnihilo:mesh_netherite.name=Netherite Stiffened Mesh
+
+item.exnihilo:hammer_wood=Wooden Hammer
+item.exnihilo:hammer_stone=Stone Hammer
+item.exnihilo:hammer_iron=Iron Hammer
+item.exnihilo:hammer_gold=Golden Hammer
+item.exnihilo:hammer_diamond=Diamond Hammer
+item.exnihilo:hammer_netherite=Netherite Hammer
+
+tile.exnihilo:sieve.name=Sieve
+
+tile.exnihilo:dust.name=Dust
+
+tile.exnihilo:crushed_netherrack.name=Crushed Netherrack
+tile.exnihilo:crushed_end_stone.name=Crushed End Stone
+
+item.exnihilo:pebble_stone=Stone Pebble
+item.exnihilo:pebble_andesite=Andesite Pebble
+item.exnihilo:pebble_diorite=Diorite Pebble
+item.exnihilo:pebble_granite=Granite Pebble
