@@ -60,12 +60,11 @@
 			- [ ] Gold
 			- [ ] Copper
 - [ ] Crucible
-	- [ ] >> Have no idea now
+	- [ ] *Have no idea now*
 - [ ] Porcelain Clay
 - [ ] Unfired Crucible
 - [ ] Stone Barrel
 - [ ] Other Utilities
-	- [ ] Ancient Spores
 	- [ ] Acacia Seed
 	- [ ] Birch Seed
 	- [ ] Carrot Seeds
@@ -78,10 +77,9 @@
 	- [ ] Sugarcane Seeds
 	- [ ] Potato Seeds
 	- [x] Crushed Netherrack
-	- [x] Crushed Endstone
+	- [x] Crushed End Stone
 	- [ ] Blazing Doll
 	- [ ] Creeping Doll
-	- [ ] Witchwater ( Hardest )
 
 ## Lisence
 ### <u>MikeLydeamore/ExnihiloAdscencio</u> <b>[MIT Lisence](https://github.com/MikeLydeamore/ExNihiloAdscensio/blob/master/LICENSE)</b>
